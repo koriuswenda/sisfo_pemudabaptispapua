@@ -21,7 +21,7 @@ class AppServiceProvider extends ServiceProvider
     public function boot(): void
     {
         //
-        View::share('siteTitle', 'SIPP-DLHK');
-        View::share('siteDescription', 'Sistem Informasi Pelayanan Persampahan Dinas Lingkungan Hidup dan Kebersihan Kota Jayapura');
+        View::share('siteTitle', 'Sistem Informasi Pemuda Baptis Papua');
+        View::share('siteDescription', 'Sistem Informasi Pemuda Baptis Papua');
     }
 }
