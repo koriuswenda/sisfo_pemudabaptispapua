@@ -21,6 +21,17 @@ Cara mendownload project melalui GitHub ke local repository.
 ```
 git clone https://github.com/nokensoft/sipp-dlhk-kotajayapura.git
 ```
+cara hapus branch di local
+
+```
+git branch -d branch-name
+```
+
+cara hapus branch di remote
+
+```
+git push origin -d branch-name
+```
 
 ### Artisan Commands
 ```
