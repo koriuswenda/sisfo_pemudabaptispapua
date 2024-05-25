@@ -27,41 +27,67 @@
 
             <div class="menu-group">
                 <div class="menu-title menu-title-transparent">
-                    Pegawai
+                    Pemuda
                 </div>
                 <ul>
-                    <li data-menu-item="classic-welcome" class="menu-item menu-item-single mb-2 {{$segment == 'asn' ? $active : ''}}">
-                        <a class="menu-item-link hover:text-black/70 {{$segment == 'asn' ? 'text-white' : ''}}" href="{{ route('asn') }}">
+                    <li data-menu-item="classic-welcome" class="menu-item menu-item-single mb-2 {{$segment == 'pemuda' ? $active : ''}}">
+                        <a class="menu-item-link hover:text-black/70 {{$segment == 'pemuda' ? 'text-white' : ''}}" href="{{ route('asn') }}">
                             <i class="fa-solid fa-users text-lg"></i>
-                            <span class="menu-item-text">ASN</span>
-                        </a>
-                    </li>
-                    <li data-menu-item="classic-welcome" class="menu-item menu-item-single mb-2 {{$segment == 'non-asn' ? $active : ''}}">
-                        <a class="menu-item-link hover:text-black/70 {{$segment == 'non-asn' ? 'text-white' : ''}}" href="{{ route('nonAsn') }}">
-                            <i class="fa-solid fa-users text-lg"></i>
-                            <span class="menu-item-text">Non ASN</span>
+                            <span class="menu-item-text">Data Pemuda</span>
                         </a>
                     </li>
                 </ul>
             </div>
             {{-- menu-group end --}}
 
+            <div class="menu-group">
+                <div class="menu-title menu-title-transparent">
+                    Data Master
+                </div>
+                <ul>
+                    <li data-menu-item="classic-welcome" class="menu-item menu-item-single mb-2 {{$segment == 'wilayah' ? $active : ''}}">
+                        <a class="menu-item-link hover:text-black/70 {{$segment == 'wilayah' ? 'text-white' : ''}}" href="{{ route('dasbor') }}">
+                            <i class="fa-solid fa-users text-lg"></i>
+                            <span class="menu-item-text">Data Wilayah</span>
+                        </a>
+                    </li>
+                    <li data-menu-item="classic-welcome" class="menu-item menu-item-single mb-2 {{$segment == 'gereja' ? $active : ''}}">
+                        <a class="menu-item-link hover:text-black/70 {{$segment == 'gereja' ? 'text-white' : ''}}" href="{{ route('dasbor') }}">
+                            <i class="fa-solid fa-users text-lg"></i>
+                            <span class="menu-item-text">Data Gereja</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            {{-- menu-group end --}}
 
             <div class="menu-group">
                 <div class="menu-title menu-title-transparent">
-                    Manajemen Kerja
+                    Informasi & Publikasi
                 </div>
                 <ul>
-                    <li data-menu-item="classic-welcome" class="menu-item menu-item-single mb-2 {{$segment == 'bidang' ? $active : ''}}">
-                        <a class="menu-item-link hover:text-black/70 {{$segment == 'bidang' ? 'text-white' : ''}}" href="{{ route('bidang') }}">
-                            <i class="fa-solid fa-tags text-lg"></i>
-                            <span class="menu-item-text">Bidang</span>
+                    <li data-menu-item="classic-welcome" class="menu-item menu-item-single mb-2 {{$segment == 'pengumuman' ? $active : ''}}">
+                        <a class="menu-item-link hover:text-black/70 {{$segment == 'pengumuman' ? 'text-white' : ''}}" href="{{ route('dasbor') }}">
+                            <i class="fa-solid fa-info text-lg"></i>
+                            <span class="menu-item-text">Pengumuman</span>
                         </a>
                     </li>
-                    <li data-menu-item="classic-welcome" class="menu-item menu-item-single mb-2 {{$segment == 'lokasi' ? $active : ''}}">
-                        <a class="menu-item-link hover:text-black/70 {{$segment == 'lokasi' ? 'text-white' : ''}}" href="{{ route('lokasi') }}">
-                            <i class="fa-solid fa-map text-lg"></i>
-                            <span class="menu-item-text">Lokasi</span>
+                    <li data-menu-item="classic-welcome" class="menu-item menu-item-single mb-2 {{$segment == 'agenda' ? $active : ''}}">
+                        <a class="menu-item-link hover:text-black/70 {{$segment == 'agenda' ? 'text-white' : ''}}" href="{{ route('dasbor') }}">
+                            <i class="fa-solid fa-calendar text-lg"></i>
+                            <span class="menu-item-text">Agenda Kegiatan</span>
+                        </a>
+                    </li>
+                    <li data-menu-item="classic-welcome" class="menu-item menu-item-single mb-2 {{$segment == 'galeri' ? $active : ''}}">
+                        <a class="menu-item-link hover:text-black/70 {{$segment == 'galeri' ? 'text-white' : ''}}" href="{{ route('dasbor') }}">
+                            <i class="fa-solid fa-image text-lg"></i>
+                            <span class="menu-item-text">Galeri</span>
+                        </a>
+                    </li>
+                    <li data-menu-item="classic-welcome" class="menu-item menu-item-single mb-2 {{$segment == 'jadwal' ? $active : ''}}">
+                        <a class="menu-item-link hover:text-black/70 {{$segment == 'jadwal' ? 'text-white' : ''}}" href="{{ route('dasbor') }}">
+                            <i class="fa-solid fa-calendar-check text-lg"></i>
+                            <span class="menu-item-text">Jadwal Ibadah</span>
                         </a>
                     </li>
                 </ul>
@@ -77,99 +103,6 @@
                 <div class="menu-title menu-title-transparent">
                     Pengaturan
                 </div>
-
-                <ul>
-                    <li class="menu-collapse">
-                        <div class="menu-collapse-item">
-                            <i class="fa-solid fa-box text-lg"></i>
-                            <span class="menu-item-text">Data Master</span>
-                        </div>
-                        <ul>
-                            
-                           
-                            
-                                <li data-menu-item="classic-settings" class="menu-item">
-                                    <a class="h-full w-full flex items-center" href="{{ route('pangkatGolongan') }}">
-                                        <span>Pangkat/Golongan</span>
-                                    </a>
-                                </li>
-
-                            
-                            
-
-                            <li data-menu-item="classic-invoice" class="menu-item">
-                                <a class="h-full w-full flex items-center" href="{{ route('jabatan') }}">
-                                    <span>Jabatan</span>
-                                </a>
-                            </li>
-                            <li data-menu-item="classic-activity-log" class="menu-item">
-                                <a class="h-full w-full flex items-center" href="{{ route('tugas') }}">
-                                    <span>Tugas</span>
-                                </a>
-                            </li>
-                            <li data-menu-item="classic-kyc-form" class="menu-item">
-                                <a class="h-full w-full flex items-center" href="{{ route('gelarDepan') }}">
-                                    <span>Gelar Depan</span>
-                                </a>
-                            </li>
-                            <li data-menu-item="classic-kyc-form" class="menu-item">
-                                <a class="h-full w-full flex items-center" href="{{ route('gelarBelakang') }}">
-                                    <span>Gelar Belakang</span>
-                                </a>
-                            </li>
-                            <li data-menu-item="classic-kyc-form" class="menu-item">
-                                <a class="h-full w-full flex items-center" href="{{ route('gelarNonAkademis') }}">
-                                    <span>Gelar Non Akademis</span>
-                                </a>
-                            </li>
-                            <li data-menu-item="classic-kyc-form" class="menu-item">
-                                <a class="h-full w-full flex items-center" href="{{ route('jenjangPendidikan') }}">
-                                    <span>Jenjang Pendidikan</span>
-                                </a>
-                            </li>
-                            <li data-menu-item="classic-kyc-form" class="menu-item">
-                                <a class="h-full w-full flex items-center" href="{{ route('diklat') }}">
-                                    <span>Diklat</span>
-                                </a>
-                            </li>
-                            <li data-menu-item="classic-kyc-form" class="menu-item">
-                                <a class="h-full w-full flex items-center" href="{{ route('sertifikatKeahlian') }}">
-                                    <span>Sertifikat Keahlian</span>
-                                </a>
-                            </li>
-                            <li data-menu-item="classic-kyc-form" class="menu-item">
-                                <a class="h-full w-full flex items-center" href="{{ route('statusPerkawinan') }}">
-                                    <span>Status Perkawinan</span>
-                                </a>
-                            </li>
-                            <li data-menu-item="classic-kyc-form" class="menu-item">
-                                <a class="h-full w-full flex items-center" href="{{ route('agama') }}">
-                                    <span>Agama</span>
-                                </a>
-                            </li>
-                            <li data-menu-item="classic-kyc-form" class="menu-item">
-                                <a class="h-full w-full flex items-center" href="{{ route('jenisKelamin') }}">
-                                    <span>Jenis Kelamin</span>
-                                </a>
-                            </li>
-                            <li data-menu-item="classic-kyc-form" class="menu-item">
-                                <a class="h-full w-full flex items-center" href="{{ route('suku') }}">
-                                    <span>Suku</span>
-                                </a>
-                            </li>
-                            <li data-menu-item="classic-kyc-form" class="menu-item">
-                                <a class="h-full w-full flex items-center" href="{{ route('distrik') }}">
-                                    <span>Distrik</span>
-                                </a>
-                            </li>
-                            <li data-menu-item="classic-kyc-form" class="menu-item">
-                                <a class="h-full w-full flex items-center" href="{{ route('kelurahan') }}">
-                                    <span>Kelurahan</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
 
                 <ul>
                     <li data-menu-item="classic-welcome" class="menu-item menu-item-single mb-2">
@@ -191,7 +124,7 @@
             
             @endhasanyrole
 
-            @hasanyrole('kepaladinas|kepalabidang|kepalaseksi|adminmaster')
+            @hasanyrole('operatorsinode|operatorwilayah|operatorgereja|adminmaster')
 
             <div class="menu-group">
                 <div class="menu-title menu-title-transparent">
