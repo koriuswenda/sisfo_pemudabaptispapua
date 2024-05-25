@@ -20,6 +20,15 @@ class Dasbor extends Component
     public $suku = [];
 
     // total
+    public $totalPemuda = 0;
+    
+    public $totalPemudaLakiLaki = 0;
+    public $totalPemudaPerempuan = 0;
+
+    public $totalWilayah = 0;
+    public $totalGereja = 0;
+
+
     public $totalASN = 0;
     public $totalNonASN = 0;
 
