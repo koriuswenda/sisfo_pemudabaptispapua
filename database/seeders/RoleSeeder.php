@@ -11,7 +11,7 @@ class RoleSeeder extends Seeder
 {
     public function run(): void
     {
-
+        // role: adminmaster
         $permission1 = Permission::create(['name' => 'edit']);
         $permission2 = Permission::create(['name' => 'delete']);
         $permission3 = Permission::create(['name' => 'view']);
@@ -27,44 +27,29 @@ class RoleSeeder extends Seeder
         $role1->givePermissionTo($permission3);
         $permission3->assignRole($role1);
 
-        $role2= Role::create([
-            'id' => 2,
-            'name' => 'operator',
-            'keterangan' => 'hak akses sebagai Operator'
-        ]);
-        $role2->givePermissionTo($permission1);
-        $permission1->assignRole($role2);
-        $role2->givePermissionTo($permission3);
-        $permission3->assignRole($role2);
-
-        $role3 = Role::create([
-            'id' => 3,
-            'name' => 'kepaladinas',
-            'keterangan' => 'hak akses sebagai Kepala Bidang'
-        ]);
-        $role3->givePermissionTo($permission3);
-        $permission3->assignRole($role3);
-
+        // role: operatorsinode
         $role4 = Role::create([
             'id' => 4,
-            'name' => 'kepalabidang',
-            'keterangan' => 'Hak akses sebagai Kepala Bidang'
+            'name' => 'operatorsinode',
+            'keterangan' => 'Hak akses sebagai Operator Sinode'
         ]);
         $role4->givePermissionTo($permission3);
         $permission3->assignRole($role4);
 
+        // role: operatorwilayah
         $role5 = Role::create([
             'id' => 5,
-            'name' => 'kepalaseksi',
-            'keterangan' => 'Hak akses sebagai Kepala Seksi'
+            'name' => 'operatorwilayah',
+            'keterangan' => 'Hak akses sebagai Operator Wilayah'
         ]);
         $role5->givePermissionTo($permission3);
         $permission3->assignRole($role5);
 
+        // role: operatorgereja
         $role6 = Role::create([
             'id' => 6,
-            'name' => 'pegawai',
-            'keterangan' => 'Hak akses sebagai Pegawai PNS/Non PNS'
+            'name' => 'operatorgereja',
+            'keterangan' => 'Hak akses sebagai Operator Gereja'
         ]);
         $role6->givePermissionTo($permission3);
         $permission3->assignRole($role6);

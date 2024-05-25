@@ -15,60 +15,29 @@ class UserSeeder extends Seeder
         $adminmaster =  User::create([
             'username' => 'adminmaster',
             'password' => bcrypt('adminmaster'),
-            // 'role_id' => 1 //adminmaster
         ]);
         $adminmaster->assignRole('adminmaster');
 
-        // operator
-        $operator =  User::create([
-            'username' => 'operator',
-            'password' => bcrypt('operator'),
-            // 'role_id' => 2 // operator
+        // operatorsinode
+        $operatorsinode =  User::create([
+            'username' => 'operatorsinode',
+            'password' => bcrypt('operatorsinode'),
         ]);
-        $operator->assignRole('operator');
+        $operatorsinode->assignRole('operatorsinode');
 
-        // kepaladinas
-        $kepaladinas =  User::create([
-            'username' => 'kepaladinas',
-            'password' => bcrypt('kepaladinas'),
-            // 'role_id' => 3 // kepaladinas
+        // operatorwilayah
+        $operatorwilayah =  User::create([
+            'username' => 'operatorwilayah',
+            'password' => bcrypt('operatorwilayah'),
         ]);
-        $kepaladinas->assignRole('kepaladinas');
+        $operatorwilayah->assignRole('operatorwilayah');
 
-        // kepalabidang
-        $kepalabidang =  User::create([
-            'username' => 'kepalabidang',
-            'password' => bcrypt('kepalabidang'),
-            // 'role_id' => 4 // kepalabidang
+        // operatorgereja
+        $operatorgereja =  User::create([
+            'username' => 'operatorgereja',
+            'password' => bcrypt('operatorgereja'),
         ]);
-        $kepalabidang->assignRole('kepalabidang');
-
-        // kepalaseksi
-        $kepalaseksi =  User::create([
-            'username' => 'kepalaseksi',
-            'password' => bcrypt('kepalaseksi'),
-            // 'role_id' => 5 // kepalaseksi
-        ]);
-        $kepalaseksi->assignRole('kepalaseksi');
-
-        // pegawai
-        $pegawai =  User::create([
-            'username' => 'pegawai',
-            'password' => bcrypt('pegawai'),
-            // 'role_id' => 6 // pegawai
-        ]);
-        $pegawai->assignRole('pegawai');
+        $operatorgereja->assignRole('operatorgereja');
 
     }
 }
-
-
-/*
-    roles:
-    1 = adminmaster
-    2 = operator
-    3 = kepaladinas
-    4 = kepalabidang
-    5 = kepalaseksi
-    6 = pegawai
-*/
