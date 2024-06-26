@@ -125,7 +125,7 @@ class PemudaSeeder extends Seeder
             ],
             /*
             | ============================================================
-            | Gereja : Gereja Baptis Yahim Sentani
+            | Gereja : Gereja Baptis Kiwone
             | ============================================================
             */
             [
@@ -147,7 +147,7 @@ class PemudaSeeder extends Seeder
             ],
             /*
             | ============================================================
-            | Gereja : Gereja Baptis Yahim Sentani
+            | Gereja : Gereja Baptis Waena
             | ============================================================
             */
             [
@@ -169,7 +169,7 @@ class PemudaSeeder extends Seeder
             ],
             /*
             | ============================================================
-            | Gereja : Gereja Baptis Yahim Sentani
+            | Gereja : Gereja Baptis Dawer Entrop
             | ============================================================
             */
             [
@@ -178,6 +178,51 @@ class PemudaSeeder extends Seeder
                 'nama_belakang' => 'Tabuni',
                 'jenis_kelamin' => 'Laki-laki',
                 'tempat_tanggal_lahir' => 'Tiom, 11 Januari 1999',
+                // 'email' => 'maria.jikwa@gmail.com',
+                'no_hp' => '081209876543',
+                'gambar' => fake()->randomElement(
+                    [
+                        'avatars/girl.png',
+                        'avatars/girl-2.png'
+                    ]
+                ),
+                'gereja_id' => 1,
+                'published_at' => now(),
+            ],
+
+            /*
+            | ============================================================
+            | Gereja : Gereja Baptis Bukit Zaitun Skaylend 
+            | ============================================================
+            */
+            [
+                'nama_depan' => 'Selrio',
+                'nama_tengah' => '',
+                'nama_belakang' => 'Morib',
+                'jenis_kelamin' => 'Laki-laki',
+                'tempat_tanggal_lahir' => 'Tiom, Agustus 2001',
+                // 'email' => 'maria.jikwa@gmail.com',
+                'no_hp' => '081209876543',
+                'gambar' => fake()->randomElement(
+                    [
+                        'avatars/girl.png',
+                        'avatars/girl-2.png'
+                    ]
+                ),
+                'gereja_id' => 1,
+                'published_at' => now(),
+            ],
+            /*
+            | ============================================================
+            | Gereja : Gereja Baptis Kamkey Tanah Hitam
+            | ============================================================
+            */
+            [
+                'nama_depan' => 'Sarah',
+                'nama_tengah' => '',
+                'nama_belakang' => 'Bosawer',
+                'jenis_kelamin' => 'Perempuan',
+                'tempat_tanggal_lahir' => 'Sorong, 12 Maret 2000',
                 // 'email' => 'maria.jikwa@gmail.com',
                 'no_hp' => '081209876543',
                 'gambar' => fake()->randomElement(
