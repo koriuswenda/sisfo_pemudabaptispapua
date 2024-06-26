@@ -15,6 +15,12 @@ class PemudaSeeder extends Seeder
     {
 
         collect([
+            
+            /*
+            | ============================================================
+            | Gereja : Gereja Baptis Kiwone
+            | ============================================================
+            */ 
             [
                 'nama_depan' => 'Korius',
                 'nama_tengah' => 'Kussa',
@@ -47,8 +53,56 @@ class PemudaSeeder extends Seeder
                     ]
                 ),
                 'gereja_id' => 1,
-                'deleted_at' => now(),
+                'published_at' => now(),
             ],
+
+            /*
+            | ============================================================
+            | Gereja : Gereja Baptis Ujung Bumi
+            | ============================================================
+            */ 
+            [
+                'nama_depan' => 'Adam',
+                'nama_tengah' => '',
+                'nama_belakang' => 'Kogoya',
+                'jenis_kelamin' => 'Laki-Laki',
+                'tempat_tanggal_lahir' => '',
+                // 'email' => 'maria.jikwa@gmail.com',
+                'no_hp' => '081209876543',
+                'gambar' => fake()->randomElement(
+                    [
+                        'avatars/girl.png',
+                        'avatars/girl-2.png'
+                    ]
+                ),
+                'gereja_id' => 1,
+                'published_at' => now(),
+            ],
+
+            /*
+            | ============================================================
+            | Gereja : Gereja Baptis DKI Yahukimo
+            | ============================================================
+            */ 
+            [
+                'nama_depan' => 'Ansay',
+                'nama_tengah' => '',
+                'nama_belakang' => 'Yando',
+                'jenis_kelamin' => 'Laki-Laki',
+                'tempat_tanggal_lahir' => '',
+                // 'email' => 'maria.jikwa@gmail.com',
+                'no_hp' => '081209876543',
+                'gambar' => fake()->randomElement(
+                    [
+                        'avatars/girl.png',
+                        'avatars/girl-2.png'
+                    ]
+                ),
+                'gereja_id' => 1,
+                'published_at' => now(),
+            ],
+
+
         ])->each(function ($items) {
             Pemuda::create($items);
         });
