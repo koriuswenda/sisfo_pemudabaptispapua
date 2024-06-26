@@ -17,12 +17,13 @@ return new class extends Migration
             $table->string('nama_depan');
             $table->string('nama_tengah')->nullable();
             $table->string('nama_belakang')->nullable();
-            $table->string('email')->nullable();
+            $table->string('jenis_kelamin')->nullable();
+            $table->string('tempat_tanggal_lahir')->nullable();
             $table->string('no_hp')->nullable();
             $table->string('gambar')->nullable();
             
             // relation with : wilayah, gereja
-            // $table->bigInteger('gereja_id')->nullable()
+            $table->bigInteger('gereja_id')->nullable();
 
             // crated_at, updated_at, published_at, deleted_at
             $table->timestamp('published_at')->nullable();

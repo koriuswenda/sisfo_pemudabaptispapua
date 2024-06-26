@@ -19,7 +19,9 @@ class PemudaSeeder extends Seeder
                 'nama_depan' => 'Korius',
                 'nama_tengah' => 'Kussa',
                 'nama_belakang' => 'Wenda',
-                'email' => 'kk.wenda@gmail.com',
+                'jenis_kelamin' => 'Laki-Laki',
+                'tempat_tanggal_lahir' => 'Beag, 23 Februari 2000',
+                // 'email' => 'kk.wenda@gmail.com',
                 'no_hp' => '081234567890',
                 'gambar' => fake()->randomElement(
                     [
@@ -27,14 +29,16 @@ class PemudaSeeder extends Seeder
                         'avatars/man1.png',
                     ]
                 ),
-                // 'gereja_id' => fake()->numberBetween(1, 12),
+                'gereja_id' => 1,
                 'published_at' => now(),
             ],
             [
                 'nama_depan' => 'Maria',
                 'nama_tengah' => '',
                 'nama_belakang' => 'Jikwa',
-                'email' => 'maria.jikwa@gmail.com',
+                'jenis_kelamin' => 'Laki-Laki',
+                'tempat_tanggal_lahir' => 'Beag, 23 Februari 2000',
+                // 'email' => 'maria.jikwa@gmail.com',
                 'no_hp' => '081209876543',
                 'gambar' => fake()->randomElement(
                     [
@@ -42,7 +46,7 @@ class PemudaSeeder extends Seeder
                         'avatars/girl-2.png'
                     ]
                 ),
-                // 'gereja_id' => fake()->numberBetween(1, 12),
+                'gereja_id' => 1,
                 'deleted_at' => now(),
             ],
         ])->each(function ($items) {

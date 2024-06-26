@@ -31,7 +31,7 @@
                 </div>
                 <ul>
                     <li data-menu-item="classic-welcome" class="menu-item menu-item-single mb-2 {{$segment == 'pemuda' ? $active : ''}}">
-                        <a class="menu-item-link hover:text-black/70 {{$segment == 'pemuda' ? 'text-white' : ''}}" href="{{ route('asn') }}">
+                        <a class="menu-item-link hover:text-black/70 {{$segment == 'pemuda' ? 'text-white' : ''}}" href="{{ route('pemuda') }}">
                             <i class="fa-solid fa-users text-lg"></i>
                             <span class="menu-item-text">Data Pemuda</span>
                         </a>
