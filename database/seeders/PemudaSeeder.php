@@ -414,6 +414,94 @@ class PemudaSeeder extends Seeder
                 'gereja_id' => 1,
                 'published_at' => now(),
             ],
+            /*
+            | ============================================================
+            | Gereja : Gereja Baptis Kiwone
+            | ============================================================
+            */
+            [
+                'nama_depan' => 'Jules ',
+                'nama_tengah' => 'Yulian',
+                'nama_belakang' => 'Yikwa',
+                'jenis_kelamin' => 'Laki-laki',
+                'tempat_tanggal_lahir' => 'Muara, 22 Desember 2002',
+                // 'email' => 'maria.jikwa@gmail.com',
+                'no_hp' => '081209876543',
+                'gambar' => fake()->randomElement(
+                    [
+                        'avatars/girl.png',
+                        'avatars/girl-2.png'
+                    ]
+                ),
+                'gereja_id' => 1,
+                'published_at' => now(),
+            ],
+            /*
+            | ============================================================
+            | Gereja : Gereja Baptis Kiwone
+            | ============================================================
+            */
+            [
+                'nama_depan' => 'Dekinus ',
+                'nama_tengah' => 'Deki',
+                'nama_belakang' => 'Kogoya',
+                'jenis_kelamin' => 'Laki-laki',
+                'tempat_tanggal_lahir' => 'Kurugume, 12 Juli 2002',
+                // 'email' => 'maria.jikwa@gmail.com',
+                'no_hp' => '081209876543',
+                'gambar' => fake()->randomElement(
+                    [
+                        'avatars/girl.png',
+                        'avatars/girl-2.png'
+                    ]
+                ),
+                'gereja_id' => 1,
+                'published_at' => now(),
+            ],
+            /*
+            | ============================================================
+            | Gereja : Gereja Baptis Kiwone
+            | ============================================================
+            */
+            [
+                'nama_depan' => 'Ibrahim  ',
+                'nama_tengah' => 'Ibra',
+                'nama_belakang' => 'Kogoya',
+                'jenis_kelamin' => 'Laki-laki',
+                'tempat_tanggal_lahir' => 'Tinume, 22 Agustus 2001',
+                // 'email' => 'maria.jikwa@gmail.com',
+                'no_hp' => '081209876543',
+                'gambar' => fake()->randomElement(
+                    [
+                        'avatars/girl.png',
+                        'avatars/girl-2.png'
+                    ]
+                ),
+                'gereja_id' => 1,
+                'published_at' => now(),
+            ],
+            /*
+            | ============================================================
+            | Gereja : Gereja Baptis Cahaya Kasih
+            | ============================================================
+            */
+            [
+                'nama_depan' => 'Pingkan',
+                'nama_tengah' => '',
+                'nama_belakang' => 'Mokai',
+                'jenis_kelamin' => 'Perempuan',
+                'tempat_tanggal_lahir' => 'Jayapura, 24 Mei 1999',
+                // 'email' => 'maria.jikwa@gmail.com',
+                'no_hp' => '081209876543',
+                'gambar' => fake()->randomElement(
+                    [
+                        'avatars/girl.png',
+                        'avatars/girl-2.png'
+                    ]
+                ),
+                'gereja_id' => 1,
+                'published_at' => now(),
+            ],
 
 
         ])->each(function ($items) {
