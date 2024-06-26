@@ -256,6 +256,72 @@ class PemudaSeeder extends Seeder
                 'gereja_id' => 1,
                 'published_at' => now(),
             ],
+            /*
+            | ============================================================
+            | Gereja : Gereja Baptis Kamkey Tanah Hitam
+            | ============================================================
+            */
+            [
+                'nama_depan' => 'Santi',
+                'nama_tengah' => 'Olan',
+                'nama_belakang' => 'Kogoya',
+                'jenis_kelamin' => 'Laki-laki',
+                'tempat_tanggal_lahir' => 'Tinume, 12 Maret 2002',
+                // 'email' => 'maria.jikwa@gmail.com',
+                'no_hp' => '081209876543',
+                'gambar' => fake()->randomElement(
+                    [
+                        'avatars/girl.png',
+                        'avatars/girl-2.png'
+                    ]
+                ),
+                'gereja_id' => 1,
+                'published_at' => now(),
+            ],
+            /*
+            | ============================================================
+            | Gereja : Gereja Baptis Kamkey Tanah Hitam
+            | ============================================================
+            */
+            [
+                'nama_depan' => 'Bominus',
+                'nama_tengah' => 'Bowen',
+                'nama_belakang' => 'Wenda',
+                'jenis_kelamin' => 'Laki-laki',
+                'tempat_tanggal_lahir' => 'Guna, 12 April 2001',
+                // 'email' => 'maria.jikwa@gmail.com',
+                'no_hp' => '081209876543',
+                'gambar' => fake()->randomElement(
+                    [
+                        'avatars/girl.png',
+                        'avatars/girl-2.png'
+                    ]
+                ),
+                'gereja_id' => 1,
+                'published_at' => now(),
+            ],
+            /*
+            | ============================================================
+            | Gereja : Gereja Baptis Kamkey Tanah Hitam
+            | ============================================================
+            */
+            [
+                'nama_depan' => 'Selinda',
+                'nama_tengah' => '',
+                'nama_belakang' => 'Wenda',
+                'jenis_kelamin' => 'Perempuan',
+                'tempat_tanggal_lahir' => 'Guna, 12 Oktober 1999',
+                // 'email' => 'maria.jikwa@gmail.com',
+                'no_hp' => '081209876543',
+                'gambar' => fake()->randomElement(
+                    [
+                        'avatars/girl.png',
+                        'avatars/girl-2.png'
+                    ]
+                ),
+                'gereja_id' => 1,
+                'published_at' => now(),
+            ],
 
 
         ])->each(function ($items) {
