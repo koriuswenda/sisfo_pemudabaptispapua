@@ -15,18 +15,18 @@ class PemudaSeeder extends Seeder
     {
 
         collect([
-            
+
             /*
             | ============================================================
             | Gereja : Gereja Baptis Kiwone
             | ============================================================
-            */ 
+            */
             [
                 'nama_depan' => 'Korius',
                 'nama_tengah' => 'Kussa',
                 'nama_belakang' => 'Wenda',
                 'jenis_kelamin' => 'Laki-Laki',
-                'tempat_tanggal_lahir' => 'Beag, 23 Februari 2000',
+                'tempat_tanggal_lahir' => 'Beam, 23 Februari 2000',
                 // 'email' => 'kk.wenda@gmail.com',
                 'no_hp' => '081234567890',
                 'gambar' => fake()->randomElement(
@@ -39,11 +39,11 @@ class PemudaSeeder extends Seeder
                 'published_at' => now(),
             ],
             [
-                'nama_depan' => 'Maria',
-                'nama_tengah' => '',
+                'nama_depan' => 'Ana',
+                'nama_tengah' => 'Maria',
                 'nama_belakang' => 'Jikwa',
-                'jenis_kelamin' => 'Laki-Laki',
-                'tempat_tanggal_lahir' => 'Beag, 23 Februari 2000',
+                'jenis_kelamin' => 'Perempuan',
+                'tempat_tanggal_lahir' => 'Wamena, 16 Juni 1989',
                 // 'email' => 'maria.jikwa@gmail.com',
                 'no_hp' => '081209876543',
                 'gambar' => fake()->randomElement(
@@ -60,13 +60,13 @@ class PemudaSeeder extends Seeder
             | ============================================================
             | Gereja : Gereja Baptis Ujung Bumi
             | ============================================================
-            */ 
+            */
             [
                 'nama_depan' => 'Adam',
                 'nama_tengah' => '',
                 'nama_belakang' => 'Kogoya',
                 'jenis_kelamin' => 'Laki-Laki',
-                'tempat_tanggal_lahir' => '',
+                'tempat_tanggal_lahir' => 'Keerom, 22 Mei 2001',
                 // 'email' => 'maria.jikwa@gmail.com',
                 'no_hp' => '081209876543',
                 'gambar' => fake()->randomElement(
@@ -83,13 +83,13 @@ class PemudaSeeder extends Seeder
             | ============================================================
             | Gereja : Gereja Baptis DKI Yahukimo
             | ============================================================
-            */ 
+            */
             [
-                'nama_depan' => 'Ansay',
+                'nama_depan' => 'Ansai',
                 'nama_tengah' => '',
                 'nama_belakang' => 'Yando',
                 'jenis_kelamin' => 'Laki-Laki',
-                'tempat_tanggal_lahir' => '',
+                'tempat_tanggal_lahir' => 'Ninia,11 November 2002',
                 // 'email' => 'maria.jikwa@gmail.com',
                 'no_hp' => '081209876543',
                 'gambar' => fake()->randomElement(
