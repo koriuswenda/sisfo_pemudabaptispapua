@@ -123,6 +123,28 @@ class PemudaSeeder extends Seeder
                 'gereja_id' => 1,
                 'published_at' => now(),
             ],
+            /*
+            | ============================================================
+            | Gereja : Gereja Baptis Yahim Sentani
+            | ============================================================
+            */
+            [
+                'nama_depan' => 'Selvia',
+                'nama_tengah' => 'Putuwati',
+                'nama_belakang' => 'Yikwa',
+                'jenis_kelamin' => 'Perempuan',
+                'tempat_tanggal_lahir' => 'Wamena, 05 Oktober 2000',
+                // 'email' => 'maria.jikwa@gmail.com',
+                'no_hp' => '081209876543',
+                'gambar' => fake()->randomElement(
+                    [
+                        'avatars/girl.png',
+                        'avatars/girl-2.png'
+                    ]
+                ),
+                'gereja_id' => 1,
+                'published_at' => now(),
+            ],
 
 
         ])->each(function ($items) {
