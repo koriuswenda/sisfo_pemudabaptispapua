@@ -236,7 +236,7 @@ class PemudaSeeder extends Seeder
             ],
             /*
             | ============================================================
-            | Gereja : Gereja Baptis Kamkey Tanah Hitam
+            | Gereja : Gereja Baptis Baseg Pasir II
             | ============================================================
             */
             [
@@ -258,7 +258,7 @@ class PemudaSeeder extends Seeder
             ],
             /*
             | ============================================================
-            | Gereja : Gereja Baptis Kamkey Tanah Hitam
+            | Gereja : Gereja Baptis Baseg Pasir II
             | ============================================================
             */
             [
@@ -280,7 +280,7 @@ class PemudaSeeder extends Seeder
             ],
             /*
             | ============================================================
-            | Gereja : Gereja Baptis Kamkey Tanah Hitam
+            | Gereja : Gereja Baptis Waena
             | ============================================================
             */
             [
@@ -302,7 +302,7 @@ class PemudaSeeder extends Seeder
             ],
             /*
             | ============================================================
-            | Gereja : Gereja Baptis Kamkey Tanah Hitam
+            | Gereja : Gereja Baptis Waena
             | ============================================================
             */
             [
@@ -311,6 +311,98 @@ class PemudaSeeder extends Seeder
                 'nama_belakang' => 'Wenda',
                 'jenis_kelamin' => 'Perempuan',
                 'tempat_tanggal_lahir' => 'Guna, 12 Oktober 1999',
+                // 'email' => 'maria.jikwa@gmail.com',
+                'no_hp' => '081209876543',
+                'gambar' => fake()->randomElement(
+                    [
+                        'avatars/girl.png',
+                        'avatars/girl-2.png'
+                    ]
+                ),
+                'gereja_id' => 1,
+                'published_at' => now(),
+            ],
+
+            /*
+            | ============================================================
+            | Gereja : Gereja Baptis Kiwone
+            | ============================================================
+            */
+            [
+                'nama_depan' => 'Nipon',
+                'nama_tengah' => 'Nikcy',
+                'nama_belakang' => 'Wanimbo',
+                'jenis_kelamin' => 'Laki-laki',
+                'tempat_tanggal_lahir' => 'Indawan, 12 Oktober 2002',
+                // 'email' => 'maria.jikwa@gmail.com',
+                'no_hp' => '081209876543',
+                'gambar' => fake()->randomElement(
+                    [
+                        'avatars/girl.png',
+                        'avatars/girl-2.png'
+                    ]
+                ),
+                'gereja_id' => 1,
+                'published_at' => now(),
+            ],
+
+            /*
+            | ============================================================
+            | Gereja : Gereja Baptis Kiwone Padang Bulan
+            | ============================================================
+            */
+            [
+                'nama_depan' => 'Alua',
+                'nama_tengah' => 'Robert',
+                'nama_belakang' => 'Kogoya',
+                'jenis_kelamin' => 'Laki-laki',
+                'tempat_tanggal_lahir' => 'Lualo, 10 Juni 2003',
+                // 'email' => 'maria.jikwa@gmail.com',
+                'no_hp' => '081209876543',
+                'gambar' => fake()->randomElement(
+                    [
+                        'avatars/girl.png',
+                        'avatars/girl-2.png'
+                    ]
+                ),
+                'gereja_id' => 1,
+                'published_at' => now(),
+            ],
+
+            /*
+            | ============================================================
+            | Gereja : Gereja Baptis Kiwone Padang Bulan
+            | ============================================================
+            */
+            [
+                'nama_depan' => 'Hanna',
+                'nama_tengah' => '',
+                'nama_belakang' => 'Tabuni',
+                'jenis_kelamin' => 'Perempuan',
+                'tempat_tanggal_lahir' => 'Wamena, 8 September 2003',
+                // 'email' => 'maria.jikwa@gmail.com',
+                'no_hp' => '081209876543',
+                'gambar' => fake()->randomElement(
+                    [
+                        'avatars/girl.png',
+                        'avatars/girl-2.png'
+                    ]
+                ),
+                'gereja_id' => 1,
+                'published_at' => now(),
+            ],
+
+            /*
+            | ============================================================
+            | Gereja : Gereja Baptis Mula-mula Santa Rosa
+            | ============================================================
+            */
+            [
+                'nama_depan' => 'Iman ',
+                'nama_tengah' => '',
+                'nama_belakang' => 'Wenda',
+                'jenis_kelamin' => 'Laki-laki',
+                'tempat_tanggal_lahir' => 'Beam, 12 Oktober 2001',
                 // 'email' => 'maria.jikwa@gmail.com',
                 'no_hp' => '081209876543',
                 'gambar' => fake()->randomElement(
