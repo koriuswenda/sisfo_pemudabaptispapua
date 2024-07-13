@@ -61,7 +61,13 @@
                     <thead>
                     <tr>
                         <th>Nama Lengkap</th>
-                        <th>Keterangan</th>
+                        <th>Jenis Kelamin</th>
+                        <th>Tempat, Tanggal Lahir</th>
+                        <th>Nomor HP</th>
+                        <th>Usia</th>
+                        <th>Alamat</th>
+                        <th>Dibuat pada</th>
+                        <th>Diubah pada</th>
                         @can('edit')
                             @if($menu != 'tempat_sampah')
                                 <th>Toggle</th>
@@ -82,10 +88,13 @@
                             @endphp
                             <tr>
                                 <td>{{ $record->nama_depan ?? ''}} {{ $record->nama_tengah ?? ''}} {{ $record->nama_belakang ?? ''}}</td>
-                                <td>{{$record->jenis_kelamin ?? ''}}</td>
+                                <td>{{$record->jenisKelamin?->jenis_kelamin}}</td>
                                 <td>{{$record->tempat_tanggal_lahir ?? ''}}</td>
                                 <td>{{$record->nomor_hp ?? ''}}</td>
-                                <td>{{$record->keterangan}}</td>
+                                <td>{{$record->usia ?? ''}}</td>
+                                <td>{{$record->alamat ?? ''}}</td>
+                                <td>{{$record->created_at ?? ''}}</td>
+                                <td>{{$record->updated_at ?? ''}}</td>
                                 @can('edit')
                                     @if(!isset($record->deleted_at))
                                         <td>

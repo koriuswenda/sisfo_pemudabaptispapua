@@ -17,9 +17,11 @@ return new class extends Migration
             $table->string('nama_depan');
             $table->string('nama_tengah')->nullable();
             $table->string('nama_belakang')->nullable();
-            $table->string('jenis_kelamin')->nullable();
+            $table->string('jenis_kelamin_id')->nullable();
             $table->string('tempat_tanggal_lahir')->nullable();
-            $table->string('no_hp')->nullable();
+            $table->string('nomor_hp')->nullable();
+            $table->string('usia')->nullable();
+            $table->string('alamat')->nullable();
             $table->string('gambar')->nullable();
             
             // relation with : wilayah, gereja

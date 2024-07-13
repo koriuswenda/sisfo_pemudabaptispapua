@@ -11,21 +11,51 @@
                                         <div class="w-1/2">
                                             <x-admin.input label="Nama Depan" id="nama_depan" name="pemuda.nama_depan"
                                                 :isDisabled="$isDisabled" />
-                                        </div>
+                                        </div> <!-- input item end -->
+
                                         <div class="w-1/2">
                                             <x-admin.input label="Nama Tengah" id="nama_tengah"
                                                 name="pemuda.nama_tengah" :isDisabled="$isDisabled" />
-                                        </div>
+                                        </div> <!-- input item end -->
+
                                         <div class="w-1/2">
                                             <x-admin.input label="Nama Belakang" id="nama_belakang"
                                                 name="pemuda.nama_belakang" :isDisabled="$isDisabled" />
-                                        </div>
+                                        </div> <!-- input item end -->
 
                                     </div>
+
+                                    <div class="form-item flex gap-2">
+                                        <div class="w-1/3">
+                                            <div class="w-1/2">
+                                            <x-admin.select label="Jenis Kelamin" id="jenis-kelamin" optionName="jenis_kelamin" :options="$jenisKelamin" name="pemuda.jenis_kelamin_id"  :isDisabled="$isDisabled" />
+                                        </div>
+                                        </div> <!-- input item end -->
+
+                                    </div>
+
+                                    <div class="form-item flex gap-2">
+
+                                        <div class="w-1/3">
+                                            <x-admin.input label="Tempat, Tanggal Lahir" id="tempat_tanggal_lahir"
+                                                name="pemuda.tempat_tanggal_lahir" :isDisabled="$isDisabled" />
+                                        </div> <!-- input item end -->
+
+                                        <div class="w-1/3">
+                                            <x-admin.input label="Nomor HP" id="nomor_hp"
+                                                name="pemuda.nomor_hp" :isDisabled="$isDisabled" />
+                                        </div> <!-- input item end -->
+
+                                        <div class="w-1/3">
+                                            <x-admin.input label="Usia" id="usia"
+                                                name="pemuda.usia" :isDisabled="$isDisabled" />
+                                        </div> <!-- input item end -->
+                                    </div>
+
                                     <div class="form-item flex gap-2">
                                         <div class="w-full">
-                                            <x-admin.textarea label="Keterangan" id="catatan" name="pemuda.keterangan"
-                                                :isDisabled="$isDisabled" />
+                                            <x-admin.textarea label="Alamat" id="alamat" name="pemuda.alamat"
+                                                :isDisabled="$isDisabled" /> <!-- input item end -->
                                         </div>
                                     </div>
                                 </div>

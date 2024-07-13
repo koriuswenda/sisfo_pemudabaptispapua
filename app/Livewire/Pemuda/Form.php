@@ -3,6 +3,7 @@
 namespace App\Livewire\Pemuda;
 
 use App\Models\Pemuda;
+use App\Models\JenisKelamin;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
@@ -17,6 +18,7 @@ use Exception;
 class Form extends Component
 {
     public $pemuda = [];
+    public $jenisKelamin;
     public bool $isDisabled = false;
 
     #[Url(history: true)]
@@ -30,7 +32,11 @@ class Form extends Component
         'pemuda.nama_depan' => 'required',
         'pemuda.nama_tengah' => 'nullable',
         'pemuda.nama_belakang' => 'nullable',
-        'pemuda.keterangan' => 'nullable',
+        'pemuda.jenis_kelamin' => 'nullable',
+        'pemuda.tempat_tanggal_lahir' => 'nullable',
+        'pemuda.nomor_hp' => 'nullable',
+        'pemuda.usia' => 'nullable',
+        'pemuda.alamat' => 'nullable',
     ];
 
     protected $messages = [
@@ -41,6 +47,10 @@ class Form extends Component
     {
         $this->user = Auth::user();
         $this->loadpemuda($this->id, $this->menu);
+        
+        $this->jenisKelamin = JenisKelamin::query()->get();
+
+
         if (!$this->user->hasAnyPermission(['edit'])) {
             $this->isDisabled = true;
         }
