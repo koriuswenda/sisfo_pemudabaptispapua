@@ -30,8 +30,6 @@ class Form extends Component
         'pemuda.nama_depan' => 'required',
         'pemuda.nama_tengah' => 'nullable',
         'pemuda.nama_belakang' => 'nullable',
-        'pemuda.Jenis_Kelamin' => 'nullable',
-        'pemuda.Tempat_lahir' => 'nullable',
         'pemuda.keterangan' => 'nullable',
     ];
 
