@@ -70,7 +70,7 @@
                         <th>Diubah pada</th>
                         @can('edit')
                             @if($menu != 'tempat_sampah')
-                                <th>Toggle</th>
+                                <th>Publik</th>
                             @endif
                         @endcan
                         <th></th>

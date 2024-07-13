@@ -25,7 +25,7 @@ class PemudaSeeder extends Seeder
                 'nama_depan' => 'Korius',
                 'nama_tengah' => 'Kussa',
                 'nama_belakang' => 'Wenda',
-                // 'jenis_kelamin' => 'Laki-Laki',
+                'jenis_kelamin_id' => 1,
                 'tempat_tanggal_lahir' => 'Beam, 23 Februari 2000',
                 // 'email' => 'kk.wenda@gmail.com',
                 'nomor_hp' => '081234567890',
