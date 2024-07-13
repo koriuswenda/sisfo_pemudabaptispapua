@@ -9,26 +9,30 @@
                                 <div class="card-body">
                                     <div class="form-item flex gap-2">
                                         <div class="w-1/2">
-                                            <x-admin.input label="Nama Depan" id="nama_depan" name="pemuda.nama_depan"  :isDisabled="$isDisabled" />
+                                            <x-admin.input label="Nama Depan" id="nama_depan" name="pemuda.nama_depan"
+                                                :isDisabled="$isDisabled" />
                                         </div>
                                         <div class="w-1/2">
-                                            <x-admin.input label="Nama Tengah" id="nama_tengah" name="pemuda.nama_tengah"  :isDisabled="$isDisabled" />
+                                            <x-admin.input label="Nama Tengah" id="nama_tengah"
+                                                name="pemuda.nama_tengah" :isDisabled="$isDisabled" />
                                         </div>
                                         <div class="w-1/2">
-                                            <x-admin.input label="Nama Belakang" id="nama_belakang" name="pemuda.nama_belakang"  :isDisabled="$isDisabled" />
+                                            <x-admin.input label="Nama Belakang" id="nama_belakang"
+                                                name="pemuda.nama_belakang" :isDisabled="$isDisabled" />
                                         </div>
-                                        
+
                                     </div>
                                     <div class="form-item flex gap-2">
                                         <div class="w-full">
-                                            <x-admin.textarea label="Keterangan" id="catatan" name="pemuda.keterangan" :isDisabled="$isDisabled" />
+                                            <x-admin.textarea label="Keterangan" id="catatan" name="pemuda.keterangan"
+                                                :isDisabled="$isDisabled" />
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    @if(!$isDisabled)
+                    @if (!$isDisabled)
                         <div id="stickyFooter" class="sticky -bottom-1 -mx-8 px-8 flex items-center justify-end py-4">
                             <div class="md:flex items-center">
                                 <button class="btn btn-default btn-sm ltr:mr-2 rtl:ml-2" type="button">Discard</button>

@@ -41,7 +41,7 @@ class Form extends Component
     {
         $this->user = Auth::user();
         $this->loadpemuda($this->id, $this->menu);
-        if(!$this->user->hasAnyPermission(['edit'])){
+        if (!$this->user->hasAnyPermission(['edit'])) {
             $this->isDisabled = true;
         }
         // if ($this->id != ''){
@@ -50,14 +50,14 @@ class Form extends Component
     }
 
     #[On('refresh')]
-    public function refreshIsDisabled($isDisabled):void
+    public function refreshIsDisabled($isDisabled): void
     {
         $this->isDisabled = $isDisabled;
     }
 
     public function save(): void
     {
-        if (!$this->user->hasAnyPermission(['edit'])){
+        if (!$this->user->hasAnyPermission(['edit'])) {
             session()->flash('error', 'Maaf anda tidak memiliki hak akses!');
             $this->redirectRoute('pemuda');
             return;
@@ -75,10 +75,9 @@ class Form extends Component
             );
 
             DB::commit();
-
         } catch (Exception $e) {
             DB::rollBack();
-            Log::info('Error: '. $e->getMessage());
+            Log::info('Error: ' . $e->getMessage());
             return;
         }
 
@@ -92,14 +91,14 @@ class Form extends Component
     }
 
     #[On('load-pemuda')]
-    public function loadPemuda($id, $menu = 'view'):void
+    public function loadPemuda($id, $menu = 'view'): void
     {
         $this->menu = $menu;
-        if ($this->id != ''){
+        if ($this->id != '') {
             $this->pemuda = Pemuda::query()->withTrashed()->find($id)?->toArray();
         }
 
-        if($this->menu === 'view') $this->isDisabled = true;
+        if ($this->menu === 'view') $this->isDisabled = true;
     }
 
     public function render(): View
