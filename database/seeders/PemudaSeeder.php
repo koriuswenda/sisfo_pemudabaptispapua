@@ -506,10 +506,10 @@ class PemudaSeeder extends Seeder
                 'nama_depan' => 'Anis',
                 'nama_tengah' => 'Olse',
                 'nama_belakang' => 'Yikwa',
-                'jenis_kelamin' => 'Laki-Laki',
+                // 'jenis_kelamin' => 'Laki-Laki',
                 'tempat_tanggal_lahir' => 'Wamena, 24 Mei 2003',
                 // 'email' => 'maria.jikwa@gmail.com',
-                'no_hp' => '081209876533',
+                'nomor_hp' => '081209876533',
                 'gambar' => fake()->randomElement(
                     [
                         'avatars/girl.png',

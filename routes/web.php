@@ -37,6 +37,7 @@ use App\Livewire\Pengguna\Index as Pengguna;
 
 // database gereja
 use App\Livewire\Pemuda\Index as Pemuda;
+use App\Livewire\Wilayah\Index as Wilayah;
 
 Route::get('/profil', Profil::class)->name('adminmaster.profil');
 Route::get('/pengaturan', Pengaturan::class)->name('adminmaster.pengaturan');
@@ -52,6 +53,7 @@ Route::middleware([
     })->name('dashboard');
 
     Route::get('/pemuda', Pemuda::class)->name('pemuda');
+    Route::get('/wilayah', Wilayah::class)->name('wilayah');
 
     Route::get('/asn', Asn::class)->name('asn');
     Route::get('/non-asn', Asn::class)->name('nonAsn');

@@ -18,6 +18,7 @@ class DatabaseSeeder extends Seeder
 
             // Datamaster
             PemudaSeeder::class,
+            WilayahSeeder::class,
             
             LokasiSeeder::class,
             JenisKelaminSeeder::class,

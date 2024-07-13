@@ -13,7 +13,14 @@ return new class extends Migration
     {
         Schema::create('wilayahs', function (Blueprint $table) {
             $table->id();
+
+            $table->string('nama_wilayah');
+            $table->string('kode_wilayah')->nullable();
+            $table->string('keterangan')->nullable();
+            
+            $table->timestamp('published_at')->nullable();
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 
