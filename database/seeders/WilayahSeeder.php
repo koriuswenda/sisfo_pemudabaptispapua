@@ -15,13 +15,18 @@ class WilayahSeeder extends Seeder
     {
         collect([
             [
-                'nama_wilayah' => 'Nama Wilayah 1',
+                'nama_wilayah' => 'Jayapura',
                 'kode_wilayah' => '12345',
                 'published_at' => now(),
             ],
             [
-                'nama_wilayah' => 'Nama Wilayah 2',
+                'nama_wilayah' => 'Keerom',
                 'kode_wilayah' => '2324',
+                'published_at' => now(),
+            ],
+            [
+                'nama_wilayah' => 'Yahukimo',
+                'kode_wilayah' => '2325',
                 'published_at' => now(),
             ],
 
