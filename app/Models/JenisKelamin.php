@@ -24,8 +24,8 @@ class JenisKelamin extends Model
     }
     use HasFactory,SoftDeletes;
 
-    public function pegawai()
+    public function pemuda()
     {
-        return $this->hasMany(Pegawai::class);
+        return $this->hasMany(Pemuda::class);
     }
 }

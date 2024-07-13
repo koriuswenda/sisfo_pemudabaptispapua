@@ -71,8 +71,8 @@ class User extends Authenticatable
 
     
 
-    public function pegawai(): BelongsTo
-    {
-        return $this->belongsTo(Pegawai::class, 'id', 'user_id');
-    }
+    // public function pegawai(): BelongsTo
+    // {
+    //     return $this->belongsTo(Pegawai::class, 'id', 'user_id');
+    // }
 }

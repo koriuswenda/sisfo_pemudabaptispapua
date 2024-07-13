@@ -106,7 +106,7 @@
 
                 <ul>
                     <li data-menu-item="classic-welcome" class="menu-item menu-item-single mb-2">
-                        <a class="menu-item-link" href="{{ route('pengguna') }}">
+                        <a class="menu-item-link" href="{{ route('dasbor') }}">
                             <i class="fa-solid fa-users text-lg"></i>
                             <span class="menu-item-text">Pengguna</span>
                         </a>
@@ -126,42 +126,7 @@
 
             @hasanyrole('operatorsinode|operatorwilayah|operatorgereja|adminmaster')
 
-            <div class="menu-group">
-                <div class="menu-title menu-title-transparent">
-                    Laporan
-                </div>
-
-                <ul>
-                    <li class="menu-collapse">
-                        <div class="menu-collapse-item">
-                            <i class="fa-solid fa-box text-lg"></i>
-                            <span class="menu-item-text">Laporan</span>
-                        </div>
-                        <ul>
-                            
-                            <li data-menu-item="classic-settings" class="menu-item">
-                                <a class="h-full w-full flex items-center" href="{{ route('dasbor') }}">
-                                    <span>Kepala Dinas</span>
-                                </a>
-                            </li>
-
-                            <li data-menu-item="classic-invoice" class="menu-item">
-                                <a class="h-full w-full flex items-center" href="{{ route('dasbor') }}">
-                                    <span>Kepala Bidang</span>
-                                </a>
-                            </li>
-
-                            <li data-menu-item="classic-invoice" class="menu-item">
-                                <a class="h-full w-full flex items-center" href="{{ route('dasbor') }}">
-                                    <span>Kepala Seksi</span>
-                                </a>
-                            </li>
-                            
-                        </ul>
-                    </li>
-                </ul>
-
-            </div>
+            
             {{-- menu-group end --}}
             
             @endhasanyrole
