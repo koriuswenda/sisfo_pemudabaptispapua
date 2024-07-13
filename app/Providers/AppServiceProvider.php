@@ -21,7 +21,7 @@ class AppServiceProvider extends ServiceProvider
     public function boot(): void
     {
         //
-        View::share('siteTitle', 'Sistem Informasi Pemuda Baptis Papua');
-        View::share('siteDescription', 'Sistem Informasi Pemuda Baptis Papua');
+        View::share('siteTitle', 'SISTEM INFORMASI PEMUDA BAPTIS PAPUA');
+        View::share('siteDescription', 'Wilayah Jayapura Keerom Yahukimo');
     }
 }
