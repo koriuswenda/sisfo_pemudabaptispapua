@@ -61,7 +61,7 @@
                     <thead>
                     <tr>
                         <th>Nama Gereja</th>
-                        <th>Kota/Kab</th>
+                        <th>Wilayah</th>
                         <th>Keterangan</th>
                         <th>Dibuat pada</th>
                         <th>Diubah pada</th>
@@ -85,7 +85,7 @@
                             @endphp
                             <tr>
                                 <td>{{$record->nama_gereja ?? ''}}</td>
-                                <td>{{$record->kotaKab?->kota_kab}}</td>
+                                <td>{{$record->wilayah?->nama_wilayah}}</td>
                                 <td>{{$record->keterangan ?? ''}}</td>
                                 <td>{{$record->created_at ?? ''}}</td>
                                 <td>{{$record->updated_at ?? ''}}</td>

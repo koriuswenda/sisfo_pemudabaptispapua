@@ -17,7 +17,7 @@
 
                                     <div class="form-item flex gap-2">
                                         <div class="w-1/2">
-                                            <x-admin.select label="Kota/Kab" id="kota_kab" optionName="kota_kab" :options="$kotaKab" name="gereja.kota_kab_id"  :isDisabled="$isDisabled" />
+                                            <x-admin.select label="Wilayah" id="wilayah_id" optionName="nama_wilayah" :options="$wilayah" name="gereja.wilayah_id"  :isDisabled="$isDisabled" />
                                         </div> <!-- input item end -->
                                     </div>
 

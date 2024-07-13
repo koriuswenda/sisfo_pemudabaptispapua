@@ -16,17 +16,17 @@ class GerejaSeeder extends Seeder
         collect([
             [
                 'nama_gereja' => 'Nama Gereja 1',
-                'kota_kab_id' => 1, // lihat id kota/kab di KotaKabSeeder
+                'wilayah_id' => 1, // lihat id kota/kab di WilayahSeeder
                 'published_at' => now(),
             ],
             [
                 'nama_gereja' => 'Nama Gereja 2',
-                'kota_kab_id' => 5, // lihat id kota/kab di KotaKabSeeder
+                'wilayah_id' => 5, // lihat id kota/kab di WilayahSeeder
                 'published_at' => now(),
             ],
             [
                 'nama_gereja' => 'Nama Gereja 3',
-                'kota_kab_id' => 9, // lihat id kota/kab di KotaKabSeeder
+                'wilayah_id' => 9, // lihat id kota/kab di WilayahSeeder
                 'published_at' => now(),
             ],
 

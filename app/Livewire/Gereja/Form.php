@@ -3,7 +3,7 @@
 namespace App\Livewire\Gereja;
 
 use App\Models\Gereja;
-use App\Models\KotaKab;
+use App\Models\Wilayah;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
@@ -18,7 +18,7 @@ use Exception;
 class Form extends Component
 {
     public $gereja = [];
-    public $kotaKab;
+    public $wilayah;
     public bool $isDisabled = false;
 
     #[Url(history: true)]
@@ -30,12 +30,12 @@ class Form extends Component
 
     protected $rules = [
         'gereja.nama_gereja' => 'required',
-        'gereja.kota_kab_id' => 'required',
+        'gereja.wilayah_id' => 'required',
     ];
 
     protected $messages = [
         'gereja.nama_gereja.required' => 'Nama gereja tidak boleh kosong',
-        'gereja.kota_kab_id.required' => 'Kota/Kab wajib dilengkapi',
+        'gereja.wilayah_id.required' => 'Wilayah wajib dilengkapi',
     ];
 
     public function mount(): void
@@ -43,7 +43,7 @@ class Form extends Component
         $this->user = Auth::user();
         $this->loadgereja($this->id, $this->menu);
         
-        $this->kotaKab = KotaKab::query()->get();
+        $this->wilayah = Wilayah::query()->get();
 
 
         if (!$this->user->hasAnyPermission(['edit'])) {

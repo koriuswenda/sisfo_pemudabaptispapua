@@ -24,8 +24,8 @@ class Gereja extends Model
         $query->whereNotNull('published_at');
     }
 
-    public function kotaKab(): BelongsTo
+    public function wilayah(): BelongsTo
     {
-        return $this->belongsTo(KotaKab::class, 'kota_kab_id');
+        return $this->belongsTo(Wilayah::class, 'wilayah_id');
     }
 }
