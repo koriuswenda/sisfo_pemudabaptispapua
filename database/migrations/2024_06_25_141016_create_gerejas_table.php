@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
 
             $table->string('nama_gereja');
-            $table->string('kota_kab')->nullable();
+            $table->string('kota_kab_id')->nullable();
             $table->string('alamat')->nullable();
             $table->mediumText('keterangan')->nullable();
 

@@ -13,7 +13,6 @@ class WilayahSeeder extends Seeder
      */
     public function run(): void
     {
-
         collect([
             [
                 'nama_wilayah' => 'Nama Wilayah 1',

@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class Gereja extends Model
+class KotaKab extends Model
 {
     use HasFactory, SoftDeletes;
 
@@ -22,10 +22,5 @@ class Gereja extends Model
     public function scopePublished(Builder $query): void
     {
         $query->whereNotNull('published_at');
-    }
-
-    public function kotaKab(): BelongsTo
-    {
-        return $this->belongsTo(KotaKab::class, 'kota_kab_id');
     }
 }
