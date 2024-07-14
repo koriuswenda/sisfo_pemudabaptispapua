@@ -27,6 +27,7 @@ class PemudaSeeder extends Seeder
                 'nama_belakang' => 'Wenda',
                 'jenis_kelamin_id' => 1,
                 'tempat_tanggal_lahir' => 'Beam, 23 Februari 2000',
+                'usia' => '24 Tahun',
                 // 'email' => 'kk.wenda@gmail.com',
                 'nomor_hp' => '081234567890',
                 'gambar' => fake()->randomElement(
