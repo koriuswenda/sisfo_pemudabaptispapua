@@ -45,6 +45,7 @@ class PemudaSeeder extends Seeder
                 'nama_belakang' => 'Jikwa',
                 'jenis_kelamin_id' => 1,
                 'tempat_tanggal_lahir' => 'Wamena, 16 Juni 1989',
+                'usia' => '25 Tahun',
                 // 'email' => 'maria.jikwa@gmail.com',
                 'nomor_hp' => '081209876543',
                 'gambar' => fake()->randomElement(
@@ -68,6 +69,7 @@ class PemudaSeeder extends Seeder
                 'nama_belakang' => 'Kogoya',
                 'jenis_kelamin_id' => 1,
                 'tempat_tanggal_lahir' => 'Keerom, 22 Mei 2001',
+                'usia' => '24 Tahun',
                 // 'email' => 'maria.jikwa@gmail.com',
                 'nomor_hp' => '081209876543',
                 'gambar' => fake()->randomElement(
@@ -91,6 +93,7 @@ class PemudaSeeder extends Seeder
                 'nama_belakang' => 'Yando',
                 'jenis_kelamin_id' => 1,
                 'tempat_tanggal_lahir' => 'Ninia,11 November 2002',
+                'usia' => '22 Tahun',
                 // 'email' => 'maria.jikwa@gmail.com',
                 'nomor_hp' => '081209876543',
                 'gambar' => fake()->randomElement(
@@ -113,6 +116,7 @@ class PemudaSeeder extends Seeder
                 'nama_belakang' => 'Yigibalom',
                 'jenis_kelamin_id' => 1,
                 'tempat_tanggal_lahir' => 'Tiom,11 September 2002',
+                'usia' => '23 Tahun',
                 // 'email' => 'maria.jikwa@gmail.com',
                 'nomor_hp' => '081209876543',
                 'gambar' => fake()->randomElement(
@@ -135,6 +139,7 @@ class PemudaSeeder extends Seeder
                 'nama_belakang' => 'Yikwa',
                 'jenis_kelamin_id' => 2,
                 'tempat_tanggal_lahir' => 'Wamena, 05 Oktober 2000',
+                'usia' => '23Tahun',
                 // 'email' => 'maria.jikwa@gmail.com',
                 'nomor_hp' => '081209876543',
                 'gambar' => fake()->randomElement(
@@ -157,6 +162,7 @@ class PemudaSeeder extends Seeder
                 'nama_belakang' => 'Kogoya',
                 'jenis_kelamin_id' => 1,
                 'tempat_tanggal_lahir' => 'Pirime, 05 November 1989',
+                'usia' => '25 Tahun',
                 // 'email' => 'maria.jikwa@gmail.com',
                 'nomor_hp' => '081209876543',
                 'gambar' => fake()->randomElement(
@@ -178,7 +184,8 @@ class PemudaSeeder extends Seeder
                 'nama_tengah' => 'Ias',
                 'nama_belakang' => 'Tabuni',
                 'jenis_kelamin_id' => 1,
-                'tempat_tanggal_lahir' => 'Tiom, 11 Januari 1999',
+                'tempat_tanggal_lahir' => 'Tiom, 11Desember 2000',
+                'usia' => '25 Tahun',
                 // 'email' => 'maria.jikwa@gmail.com',
                 'nomor_hp' => '081209876543',
                 'gambar' => fake()->randomElement(
@@ -202,6 +209,7 @@ class PemudaSeeder extends Seeder
                 'nama_belakang' => 'Morib',
                 'jenis_kelamin_id' => 1,
                 'tempat_tanggal_lahir' => 'Tiom, Agustus 2001',
+                'usia' => '23 Tahun',
                 // 'email' => 'maria.jikwa@gmail.com',
                 'nomor_hp' => '081209876543',
                 'gambar' => fake()->randomElement(
@@ -224,6 +232,7 @@ class PemudaSeeder extends Seeder
                 'nama_belakang' => 'Bosawer',
                 'jenis_kelamin_id' => 2,
                 'tempat_tanggal_lahir' => 'Sorong, 12 Maret 2000',
+                'usia' => '24 Tahun',
                 // 'email' => 'maria.jikwa@gmail.com',
                 'nomor_hp' => '081209876543',
                 'gambar' => fake()->randomElement(
@@ -246,6 +255,7 @@ class PemudaSeeder extends Seeder
                 'nama_belakang' => 'Kogoya',
                 'jenis_kelamin_id' => 1,
                 'tempat_tanggal_lahir' => 'Gamelia, 12 Juli 2000',
+                'usia' => '24 Tahun',
                 // 'email' => 'maria.jikwa@gmail.com',
                 'nomor_hp' => '081209876543',
                 'gambar' => fake()->randomElement(
@@ -268,6 +278,7 @@ class PemudaSeeder extends Seeder
                 'nama_belakang' => 'Kogoya',
                 'jenis_kelamin_id' => 2,
                 'tempat_tanggal_lahir' => 'Tinume, 12 Maret 2002',
+                'usia' => '22 Tahun',
                 // 'email' => 'maria.jikwa@gmail.com',
                 'nomor_hp' => '081209876543',
                 'gambar' => fake()->randomElement(
@@ -290,6 +301,7 @@ class PemudaSeeder extends Seeder
                 'nama_belakang' => 'Wenda',
                 'jenis_kelamin_id' => 1,
                 'tempat_tanggal_lahir' => 'Guna, 12 April 2001',
+                'usia' => '23 Tahun',
                 // 'email' => 'maria.jikwa@gmail.com',
                 'nomor_hp' => '081209876543',
                 'gambar' => fake()->randomElement(
@@ -311,7 +323,8 @@ class PemudaSeeder extends Seeder
                 'nama_tengah' => '',
                 'nama_belakang' => 'Wenda',
                 'jenis_kelamin_id' => 2,
-                'tempat_tanggal_lahir' => 'Guna, 12 Oktober 1999',
+                'tempat_tanggal_lahir' => 'Guna, 12 November 2000',
+                'usia' => '24 Tahun',
                 // 'email' => 'maria.jikwa@gmail.com',
                 'nomor_hp' => '081209876543',
                 'gambar' => fake()->randomElement(
@@ -335,6 +348,7 @@ class PemudaSeeder extends Seeder
                 'nama_belakang' => 'Wanimbo',
                 'jenis_kelamin_id' => 1,
                 'tempat_tanggal_lahir' => 'Indawan, 12 Oktober 2002',
+                'usia' => '22 Tahun',
                 // 'email' => 'maria.jikwa@gmail.com',
                 'nomor_hp' => '081209876543',
                 'gambar' => fake()->randomElement(
@@ -358,6 +372,7 @@ class PemudaSeeder extends Seeder
                 'nama_belakang' => 'Kogoya',
                 'jenis_kelamin_id' => 1,
                 'tempat_tanggal_lahir' => 'Lualo, 10 Juni 2003',
+                'usia' => '21 Tahun',
                 // 'email' => 'maria.jikwa@gmail.com',
                 'nomor_hp' => '081209876543',
                 'gambar' => fake()->randomElement(
@@ -381,6 +396,7 @@ class PemudaSeeder extends Seeder
                 'nama_belakang' => 'Tabuni',
                 'jenis_kelamin_id' => 2,
                 'tempat_tanggal_lahir' => 'Wamena, 8 September 2003',
+                'usia' => '21 Tahun',
                 // 'email' => 'maria.jikwa@gmail.com',
                 'nomor_hp' => '081209876543',
                 'gambar' => fake()->randomElement(
@@ -404,6 +420,7 @@ class PemudaSeeder extends Seeder
                 'nama_belakang' => 'Wenda',
                 'jenis_kelamin_id' => 1,
                 'tempat_tanggal_lahir' => 'Beam, 12 Oktober 2001',
+                'usia' => '23 Tahun',
                 // 'email' => 'maria.jikwa@gmail.com',
                 'nomor_hp' => '081209876543',
                 'gambar' => fake()->randomElement(
@@ -426,6 +443,7 @@ class PemudaSeeder extends Seeder
                 'nama_belakang' => 'Yikwa',
                 'jenis_kelamin_id' => 1,
                 'tempat_tanggal_lahir' => 'Muara, 22 Desember 2002',
+                'usia' => '22 Tahun',
                 // 'email' => 'maria.jikwa@gmail.com',
                 'nomor_hp' => '081209876543',
                 'gambar' => fake()->randomElement(
@@ -448,6 +466,7 @@ class PemudaSeeder extends Seeder
                 'nama_belakang' => 'Kogoya',
                 'jenis_kelamin_id' => 1,
                 'tempat_tanggal_lahir' => 'Kurugume, 12 Juli 2002',
+                'usia' => '22 Tahun',
                 // 'email' => 'maria.jikwa@gmail.com',
                 'nomor_hp' => '081209876543',
                 'gambar' => fake()->randomElement(
@@ -470,6 +489,7 @@ class PemudaSeeder extends Seeder
                 'nama_belakang' => 'Kogoya',
                 'jenis_kelamin_id' => 1,
                 'tempat_tanggal_lahir' => 'Tinume, 22 Agustus 2001',
+                'usia' => '23 Tahun',
                 // 'email' => 'maria.jikwa@gmail.com',
                 'nomor_hp' => '081209876543',
                 'gambar' => fake()->randomElement(
@@ -491,7 +511,8 @@ class PemudaSeeder extends Seeder
                 'nama_tengah' => '',
                 'nama_belakang' => 'Mokai',
                 'jenis_kelamin_id' => 1,
-                'tempat_tanggal_lahir' => 'Jayapura, 24 Mei 1999',
+                'tempat_tanggal_lahir' => 'Jayapura, 24 Oktober 2000',
+                'usia' => '24 Tahun',
                 // 'email' => 'maria.jikwa@gmail.com',
                 'nomor_hp' => '081209876543',
                 'gambar' => fake()->randomElement(
@@ -509,6 +530,7 @@ class PemudaSeeder extends Seeder
                 'nama_belakang' => 'Yikwa',
                 'jenis_kelamin_id' => 1,
                 'tempat_tanggal_lahir' => 'Wamena, 24 Mei 2003',
+                'usia' => '23 Tahun',
                 // 'email' => 'maria.jikwa@gmail.com',
                 'nomor_hp' => '081209876533',
                 'gambar' => fake()->randomElement(
