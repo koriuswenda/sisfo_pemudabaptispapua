@@ -24,10 +24,10 @@ class PegawaiFactory extends Factory
             'no_hp' => fake()->phoneNumber,
             'gambar' => fake()->randomElement(
                 [
-                    'avatars/man.png',
-                    'avatars/girl.png',
-                    'avatars/man1.png',
-                    'avatars/girl-2.png'
+                    'foto/man.png',
+                    'foto/girl.png',
+                    'foto/man1.png',
+                    'foto/girl-2.png'
                 ]
             ),
             'ktp' => 'ktp.png',

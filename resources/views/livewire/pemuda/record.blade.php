@@ -92,14 +92,14 @@
                                     <div class="flex items-center">
                                         <span class="avatar avatar-rounded avatar-md">
                                             {{-- <img class="avatar-img avatar-rounded" src="{{ isset($record->foto) && !empty($record->foto) && Storage::exists('public/'.$record->foto) ? asset('storage/'.$record->foto) : asset('assets/img/avatars/man.png') }}" loading="lazy"> --}}
-                                            @if(!empty($record->foto))
-                                            <img class="avatar-img avatar-rounded" src="{{ asset('assets/img/'.$record->foto ?? 'user.png') }}" loading="lazy">
+                                            @if($record->foto)
+                                            <img class="avatar-img avatar-rounded" src="{{ asset('storage/'.$record->foto) }}" loading="lazy">
                                             @else
                                             <img class="avatar-img avatar-rounded" src="{{ asset('assets/img/avatars/user.png') }}" loading="lazy">
                                             @endif
                                         </span>
                                         <span class="ml-2 rtl:mr-2 font-semibold ">
-                                            {{ $record->nama_depan ?? ''}} {{ $record->nama_tengah ?? ''}} {{ $record->nama_belakang ?? ''}}
+                                            {{ $record->nama_depan ?? ''}} {{ $record->nama_tengah ?? ''}} {{ $record->nama_belakang ?? ''}} | {{ asset('assets/img/'.$record->foto) }}
                                         </span>
                                     </div>
                                 </td>

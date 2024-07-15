@@ -31,7 +31,7 @@ class PemudaSeeder extends Seeder
                 'alamat' => 'Jalan Perumnas IV Padang Bulan II Itawakhu',
                 // 'email' => 'kk.wenda@gmail.com',
                 'nomor_hp' => '081234567890',
-                // 'foto' => 'avatars/korius.png',
+                // 'foto' => 'foto/korius.png',
                 'gereja_id' => 1,
                 'published_at' => now(),
             ],
@@ -47,8 +47,8 @@ class PemudaSeeder extends Seeder
                 'nomor_hp' => '081209876543',
                 'foto' => fake()->randomElement(
                     [
-                        'avatars/girl.png',
-                        'avatars/girl-2.png'
+                        'foto/girl.png',
+                        'foto/girl-2.png'
                     ]
                 ),
                 'gereja_id' => 1,
@@ -72,8 +72,8 @@ class PemudaSeeder extends Seeder
                 'nomor_hp' => '081209876543',
                 'foto' => fake()->randomElement(
                     [
-                        'avatars/girl.png',
-                        'avatars/girl-2.png'
+                        'foto/girl.png',
+                        'foto/girl-2.png'
                     ]
                 ),
                 'gereja_id' => 1,
@@ -97,8 +97,8 @@ class PemudaSeeder extends Seeder
                 'nomor_hp' => '081209876543',
                 'foto' => fake()->randomElement(
                     [
-                        'avatars/girl.png',
-                        'avatars/girl-2.png'
+                        'foto/girl.png',
+                        'foto/girl-2.png'
                     ]
                 ),
                 'gereja_id' => 1,
@@ -121,8 +121,8 @@ class PemudaSeeder extends Seeder
                 'nomor_hp' => '081209876543',
                 'foto' => fake()->randomElement(
                     [
-                        'avatars/girl.png',
-                        'avatars/girl-2.png'
+                        'foto/girl.png',
+                        'foto/girl-2.png'
                     ]
                 ),
                 'gereja_id' => 1,
@@ -145,8 +145,8 @@ class PemudaSeeder extends Seeder
                 'nomor_hp' => '081209876543',
                 'foto' => fake()->randomElement(
                     [
-                        'avatars/girl.png',
-                        'avatars/girl-2.png'
+                        'foto/girl.png',
+                        'foto/girl-2.png'
                     ]
                 ),
                 'gereja_id' => 1,
@@ -169,8 +169,8 @@ class PemudaSeeder extends Seeder
                 'nomor_hp' => '081209876543',
                 'foto' => fake()->randomElement(
                     [
-                        'avatars/girl.png',
-                        'avatars/girl-2.png'
+                        'foto/girl.png',
+                        'foto/girl-2.png'
                     ]
                 ),
                 'gereja_id' => 1,
@@ -193,8 +193,8 @@ class PemudaSeeder extends Seeder
                 'nomor_hp' => '081209876543',
                 'foto' => fake()->randomElement(
                     [
-                        'avatars/girl.png',
-                        'avatars/girl-2.png'
+                        'foto/girl.png',
+                        'foto/girl-2.png'
                     ]
                 ),
                 'gereja_id' => 1,
@@ -218,8 +218,8 @@ class PemudaSeeder extends Seeder
                 'nomor_hp' => '081209876543',
                 'foto' => fake()->randomElement(
                     [
-                        'avatars/girl.png',
-                        'avatars/girl-2.png'
+                        'foto/girl.png',
+                        'foto/girl-2.png'
                     ]
                 ),
                 'gereja_id' => 1,
@@ -242,8 +242,8 @@ class PemudaSeeder extends Seeder
                 'nomor_hp' => '081209876543',
                 'foto' => fake()->randomElement(
                     [
-                        'avatars/girl.png',
-                        'avatars/girl-2.png'
+                        'foto/girl.png',
+                        'foto/girl-2.png'
                     ]
                 ),
                 'gereja_id' => 1,
@@ -266,8 +266,8 @@ class PemudaSeeder extends Seeder
                 'nomor_hp' => '081209876543',
                 'foto' => fake()->randomElement(
                     [
-                        'avatars/girl.png',
-                        'avatars/girl-2.png'
+                        'foto/girl.png',
+                        'foto/girl-2.png'
                     ]
                 ),
                 'gereja_id' => 1,
@@ -290,8 +290,8 @@ class PemudaSeeder extends Seeder
                 'nomor_hp' => '081209876543',
                 'foto' => fake()->randomElement(
                     [
-                        'avatars/girl.png',
-                        'avatars/girl-2.png'
+                        'foto/girl.png',
+                        'foto/girl-2.png'
                     ]
                 ),
                 'gereja_id' => 1,
@@ -314,8 +314,8 @@ class PemudaSeeder extends Seeder
                 'nomor_hp' => '081209876543',
                 'foto' => fake()->randomElement(
                     [
-                        'avatars/girl.png',
-                        'avatars/girl-2.png'
+                        'foto/girl.png',
+                        'foto/girl-2.png'
                     ]
                 ),
                 'gereja_id' => 1,
@@ -338,8 +338,8 @@ class PemudaSeeder extends Seeder
                 'nomor_hp' => '081209876543',
                 'foto' => fake()->randomElement(
                     [
-                        'avatars/girl.png',
-                        'avatars/girl-2.png'
+                        'foto/girl.png',
+                        'foto/girl-2.png'
                     ]
                 ),
                 'gereja_id' => 1,
@@ -363,8 +363,8 @@ class PemudaSeeder extends Seeder
                 'nomor_hp' => '081209876543',
                 'foto' => fake()->randomElement(
                     [
-                        'avatars/girl.png',
-                        'avatars/girl-2.png'
+                        'foto/girl.png',
+                        'foto/girl-2.png'
                     ]
                 ),
                 'gereja_id' => 1,
@@ -388,8 +388,8 @@ class PemudaSeeder extends Seeder
                 'nomor_hp' => '081209876543',
                 'foto' => fake()->randomElement(
                     [
-                        'avatars/girl.png',
-                        'avatars/girl-2.png'
+                        'foto/girl.png',
+                        'foto/girl-2.png'
                     ]
                 ),
                 'gereja_id' => 1,
@@ -413,8 +413,8 @@ class PemudaSeeder extends Seeder
                 'nomor_hp' => '081209876543',
                 'foto' => fake()->randomElement(
                     [
-                        'avatars/girl.png',
-                        'avatars/girl-2.png'
+                        'foto/girl.png',
+                        'foto/girl-2.png'
                     ]
                 ),
                 'gereja_id' => 1,
@@ -438,8 +438,8 @@ class PemudaSeeder extends Seeder
                 'nomor_hp' => '081209876543',
                 'foto' => fake()->randomElement(
                     [
-                        'avatars/girl.png',
-                        'avatars/girl-2.png'
+                        'foto/girl.png',
+                        'foto/girl-2.png'
                     ]
                 ),
                 'gereja_id' => 1,
@@ -462,8 +462,8 @@ class PemudaSeeder extends Seeder
                 'nomor_hp' => '081209876543',
                 'foto' => fake()->randomElement(
                     [
-                        'avatars/girl.png',
-                        'avatars/girl-2.png'
+                        'foto/girl.png',
+                        'foto/girl-2.png'
                     ]
                 ),
                 'gereja_id' => 1,
@@ -486,8 +486,8 @@ class PemudaSeeder extends Seeder
                 'nomor_hp' => '081209876543',
                 'foto' => fake()->randomElement(
                     [
-                        'avatars/girl.png',
-                        'avatars/girl-2.png'
+                        'foto/girl.png',
+                        'foto/girl-2.png'
                     ]
                 ),
                 'gereja_id' => 1,
@@ -510,8 +510,8 @@ class PemudaSeeder extends Seeder
                 'nomor_hp' => '081209876543',
                 'foto' => fake()->randomElement(
                     [
-                        'avatars/girl.png',
-                        'avatars/girl-2.png'
+                        'foto/girl.png',
+                        'foto/girl-2.png'
                     ]
                 ),
                 'gereja_id' => 1,
@@ -534,8 +534,8 @@ class PemudaSeeder extends Seeder
                 'nomor_hp' => '081209876543',
                 'foto' => fake()->randomElement(
                     [
-                        'avatars/girl.png',
-                        'avatars/girl-2.png'
+                        'foto/girl.png',
+                        'foto/girl-2.png'
                     ]
                 ),
                 'gereja_id' => 1,
@@ -553,8 +553,8 @@ class PemudaSeeder extends Seeder
                 'nomor_hp' => '081209876533',
                 'foto' => fake()->randomElement(
                     [
-                        'avatars/girl.png',
-                        'avatars/girl-2.png'
+                        'foto/girl.png',
+                        'foto/girl-2.png'
                     ]
                 ),
                 'gereja_id' => 1,
