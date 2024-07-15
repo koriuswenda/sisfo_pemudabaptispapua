@@ -9,18 +9,15 @@
                                 <div class="card-body">
                                     <div class="form-item flex gap-2">
                                         <div class="w-1/2">
-                                            <x-admin.input label="Nama Depan" id="nama_depan" name="pemuda.nama_depan"
-                                                :isDisabled="$isDisabled" />
+                                            <x-admin.input label="Nama Depan" id="nama_depan" name="pemuda.nama_depan" :isDisabled="$isDisabled" />
                                         </div> <!-- input item end -->
 
                                         <div class="w-1/2">
-                                            <x-admin.input label="Nama Tengah" id="nama_tengah"
-                                                name="pemuda.nama_tengah" :isDisabled="$isDisabled" />
+                                            <x-admin.input label="Nama Tengah" id="nama_tengah" name="pemuda.nama_tengah" :isDisabled="$isDisabled" />
                                         </div> <!-- input item end -->
 
                                         <div class="w-1/2">
-                                            <x-admin.input label="Nama Belakang" id="nama_belakang"
-                                                name="pemuda.nama_belakang" :isDisabled="$isDisabled" />
+                                            <x-admin.input label="Nama Belakang" id="nama_belakang" name="pemuda.nama_belakang" :isDisabled="$isDisabled" />
                                         </div> <!-- input item end -->
 
                                     </div>
@@ -47,17 +44,32 @@
                                             <x-admin.input label="Usia" id="usia"
                                                 name="pemuda.usia" :isDisabled="$isDisabled" />
                                         </div> <!-- input item end -->
+
                                     </div>
 
                                     <div class="form-item flex gap-2">
                                         <div class="w-full">
-                                            <x-admin.textarea label="Alamat" id="alamat" name="pemuda.alamat"
-                                                :isDisabled="$isDisabled" /> <!-- input item end -->
-                                        </div>
+                                            <x-admin.textarea label="Alamat" id="alamat" name="pemuda.alamat" :isDisabled="$isDisabled" /> <!-- input item end -->
+                                        </div> <!-- input item end -->
                                     </div>
                                 </div>
                             </div>
                         </div>
+
+                        <div class="">
+                            <div class="card adaptable-card !border-b pb-6 py-4 rounded-br-none rounded-bl-none">
+                                <div class="card-body">
+
+                                    <div class="form-item flex gap-2">
+
+                                        <div class="w-full">
+                                            <x-admin.upload-file title="Gambar" subtitle="Unggah foto pegawai ukuran persegi" id="gambar" label="Gambar" name="pegawai.gambar" :img="isset($pegawai['gambar']) && !empty($pegawai) ? $pegawai['gambar'] : ''" :isDisabled="$isDisabled" />
+                                        </div> <!-- input item end -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                     @if (!$isDisabled)
                         <div id="stickyFooter" class="sticky -bottom-1 -mx-8 px-8 flex items-center justify-end py-4">
