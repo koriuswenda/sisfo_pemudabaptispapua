@@ -67,7 +67,7 @@
                 </div>
                 <ul>
                     <li data-menu-item="classic-welcome" class="menu-item menu-item-single mb-2 {{$segment == 'pengumuman' ? $active : ''}}">
-                        <a class="menu-item-link hover:text-black/70 {{$segment == 'pengumuman' ? 'text-white' : ''}}" href="{{ route('dasbor') }}">
+                        <a class="menu-item-link hover:text-black/70 {{$segment == 'pengumuman' ? 'text-white' : ''}}" href="{{ route('pengumuman') }}">
                             <i class="fa-solid fa-info text-lg"></i>
                             <span class="menu-item-text">Pengumuman</span>
                         </a>

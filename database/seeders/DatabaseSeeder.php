@@ -20,6 +20,7 @@ class DatabaseSeeder extends Seeder
             PemudaSeeder::class,
             WilayahSeeder::class,
             GerejaSeeder::class,
+            PengumumanSeeder::class,
             KotaKabSeeder::class,
 
             //  Role
