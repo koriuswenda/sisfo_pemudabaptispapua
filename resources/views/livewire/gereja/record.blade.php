@@ -86,7 +86,11 @@
                                 }
                             @endphp
                             <tr>
-                                <td>{{$record->nama_gereja ?? ''}}</td>
+                                <td>
+                                    <div class="inline-flex items-center">
+                                        <i class="fa-solid fa-church me-2 text-xl"></i> {{$record->nama_gereja ?? ''}}
+                                    </div>
+                                </td>
                                 <td>{{$record->nama_pengguna ?? ''}}</td>
                                 <td>{{$record->wilayah?->nama_wilayah}}</td>
                                 <td>{{$record->pemuda->count() ?? ''}}</td>
