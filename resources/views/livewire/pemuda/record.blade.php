@@ -99,7 +99,7 @@
                                             @endif
                                         </span>
                                         <span class="ml-2 rtl:mr-2 font-semibold ">
-                                            {{ $record->nama_depan ?? ''}} {{ $record->nama_tengah ?? ''}} {{ $record->nama_belakang ?? ''}} | {{ asset('assets/img/'.$record->foto) }}
+                                            {{ $record->nama_depan ?? ''}} {{ $record->nama_tengah ?? ''}} {{ $record->nama_belakang ?? ''}}
                                         </span>
                                     </div>
                                 </td>
