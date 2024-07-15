@@ -16,7 +16,7 @@ use App\Livewire\Pemuda\Index as Pemuda;
 use App\Livewire\Wilayah\Index as Wilayah;
 use App\Livewire\Gereja\Index as Gereja;
 use App\Livewire\Pengumuman\Index as Pengumuman;
-// use App\Livewire\Agenda\Index as Agenda;
+use App\Livewire\Agenda\Index as Agenda;
 // use App\Livewire\Galeri\Index as Galeri;
 // use App\Livewire\Jadwal\Index as Jadwal;
 
@@ -37,7 +37,7 @@ Route::middleware([
     Route::get('/wilayah', Wilayah::class)->name('wilayah');
     Route::get('/gereja', Gereja::class)->name('gereja');
     Route::get('/pengumuman', Pengumuman::class)->name('pengumuman');
-    // Route::get('/agenda', Agenda::class)->name('agenda');
+    Route::get('/agenda', Agenda::class)->name('agenda');
     // Route::get('/galeri', Galeri::class)->name('galeri');
     // Route::get('/jadwal', Jadwal::class)->name('jadwal');
 });

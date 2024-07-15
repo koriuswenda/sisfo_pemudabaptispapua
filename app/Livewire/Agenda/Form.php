@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Livewire\Gereja;
+namespace App\Livewire\Agenda;
 
-use App\Models\Gereja;
+use App\Models\Agenda;
 use App\Models\Wilayah;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
@@ -17,7 +17,7 @@ use Exception;
 
 class Form extends Component
 {
-    public $gereja = [];
+    public $agenda = [];
     public $wilayah;
     public bool $isDisabled = false;
 
@@ -29,19 +29,17 @@ class Form extends Component
     public $user;
 
     protected $rules = [
-        'gereja.nama_gereja' => 'required',
-        'gereja.wilayah_id' => 'required',
+        'agenda.judul' => 'required',
     ];
 
     protected $messages = [
-        'gereja.nama_gereja.required' => 'Nama gereja tidak boleh kosong',
-        'gereja.wilayah_id.required' => 'Wilayah wajib dilengkapi',
+        'agenda.judul.required' => 'Nama agenda tidak boleh kosong',
     ];
 
     public function mount(): void
     {
         $this->user = Auth::user();
-        $this->loadgereja($this->id, $this->menu);
+        $this->loadAgenda($this->id, $this->menu);
         
         $this->wilayah = Wilayah::query()->get();
 
@@ -50,7 +48,7 @@ class Form extends Component
             $this->isDisabled = true;
         }
         // if ($this->id != ''){
-        //     $this->gereja = Gereja::query()->find($this->id)?->toArray();
+        //     $this->agenda = Agenda::query()->find($this->id)?->toArray();
         // }
     }
 
@@ -64,7 +62,7 @@ class Form extends Component
     {
         if (!$this->user->hasAnyPermission(['edit'])) {
             session()->flash('error', 'Maaf anda tidak memiliki hak akses!');
-            $this->redirectRoute('gereja');
+            $this->redirectRoute('agenda');
             return;
         }
         $this->validate();
@@ -72,11 +70,11 @@ class Form extends Component
         try {
             DB::beginTransaction();
 
-            Gereja::updateOrCreate(
+            Agenda::updateOrCreate(
                 [
-                    'id' => $this->gereja['id'] ?? null
+                    'id' => $this->agenda['id'] ?? null
                 ],
-                $this->gereja
+                $this->agenda
             );
 
             DB::commit();
@@ -87,20 +85,20 @@ class Form extends Component
         }
 
         $message = 'tambahkan data baru!';
-        if (isset($this->gereja['id'])) {
+        if (isset($this->agenda['id'])) {
             $message = 'ubah data!';
         }
 
         session()->flash('success', $message);
-        $this->redirectRoute('gereja');
+        $this->redirectRoute('agenda');
     }
 
-    #[On('load-gereja')]
-    public function loadGereja($id, $menu = 'view'): void
+    #[On('load-agenda')]
+    public function loadAgenda($id, $menu = 'view'): void
     {
         $this->menu = $menu;
         if ($this->id != '') {
-            $this->gereja = Gereja::query()->withTrashed()->find($id)?->toArray();
+            $this->agenda = Agenda::query()->withTrashed()->find($id)?->toArray();
         }
 
         if ($this->menu === 'view') $this->isDisabled = true;
@@ -108,6 +106,6 @@ class Form extends Component
 
     public function render(): View
     {
-        return view('livewire.gereja.form');
+        return view('livewire.agenda.form');
     }
 }

@@ -21,6 +21,7 @@ class DatabaseSeeder extends Seeder
             WilayahSeeder::class,
             GerejaSeeder::class,
             PengumumanSeeder::class,
+            AgendaSeeder::class,
             KotaKabSeeder::class,
 
             //  Role

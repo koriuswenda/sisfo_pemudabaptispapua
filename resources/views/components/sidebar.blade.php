@@ -73,7 +73,7 @@
                         </a>
                     </li>
                     <li data-menu-item="classic-welcome" class="menu-item menu-item-single mb-2 {{$segment == 'agenda' ? $active : ''}}">
-                        <a class="menu-item-link hover:text-black/70 {{$segment == 'agenda' ? 'text-white' : ''}}" href="{{ route('dasbor') }}">
+                        <a class="menu-item-link hover:text-black/70 {{$segment == 'agenda' ? 'text-white' : ''}}" href="{{ route('agenda') }}">
                             <i class="fa-solid fa-calendar text-lg"></i>
                             <span class="menu-item-text">Agenda Kegiatan</span>
                         </a>
