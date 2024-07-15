@@ -22,7 +22,7 @@ return new class extends Migration
             $table->string('nomor_hp')->nullable();
             $table->string('usia')->nullable();
             $table->string('alamat')->nullable();
-            $table->string('gambar')->nullable();
+            $table->string('foto')->nullable();
             
             // relation with : wilayah, gereja
             $table->bigInteger('gereja_id')->nullable();

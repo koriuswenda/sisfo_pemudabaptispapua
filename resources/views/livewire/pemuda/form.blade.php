@@ -63,7 +63,7 @@
                                     <div class="form-item flex gap-2">
 
                                         <div class="w-full">
-                                            <x-admin.upload-file title="Gambar" subtitle="Unggah foto pegawai ukuran persegi" id="gambar" label="Gambar" name="pegawai.gambar" :img="isset($pegawai['gambar']) && !empty($pegawai) ? $pegawai['gambar'] : ''" :isDisabled="$isDisabled" />
+                                            <x-admin.upload-file title="Foto Profil" subtitle="Unggah foto pemuda ukuran persegi" id="foto" label="foto" name="pemuda.foto" :img="isset($pemuda['foto']) && !empty($pemuda) ? $pemuda['foto'] : ''" :isDisabled="$isDisabled" />
                                         </div> <!-- input item end -->
                                     </div>
                                 </div>

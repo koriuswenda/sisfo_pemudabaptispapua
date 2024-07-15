@@ -87,7 +87,16 @@
                                 }
                             @endphp
                             <tr>
-                                <td>{{ $record->nama_depan ?? ''}} {{ $record->nama_tengah ?? ''}} {{ $record->nama_belakang ?? ''}}</td>
+                                <td>
+                                    <div class="flex items-center">
+                                        <span class="avatar avatar-rounded avatar-md">
+                                            <img class="avatar-img avatar-rounded" src="{{ isset($record->foto) && !empty($record->foto) && Storage::exists('public/'.$record->foto) ? asset('storage/'.$record->foto) : asset('assets/img/avatars/man.png') }}" loading="lazy">
+                                        </span>
+                                        <span class="ml-2 rtl:mr-2 font-semibold">
+                                            {{ $record->nama_depan ?? ''}} {{ $record->nama_tengah ?? ''}} {{ $record->nama_belakang ?? ''}}
+                                        </span>
+                                    </div>
+                                </td>
                                 <td>{{$record->jenisKelamin?->jenis_kelamin}}</td>
                                 <td>{{$record->tempat_tanggal_lahir ?? ''}}</td>
                                 <td>{{$record->nomor_hp ?? ''}}</td>

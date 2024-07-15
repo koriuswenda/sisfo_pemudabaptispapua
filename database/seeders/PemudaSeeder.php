@@ -31,7 +31,7 @@ class PemudaSeeder extends Seeder
                 'alamat' => 'Jalan Perumnas IV Padang Bulan II Itawakhu',
                 // 'email' => 'kk.wenda@gmail.com',
                 'nomor_hp' => '081234567890',
-                'gambar' => fake()->randomElement(
+                'foto' => fake()->randomElement(
                     [
                         'avatars/man.png',
                         'avatars/man1.png',
@@ -50,7 +50,7 @@ class PemudaSeeder extends Seeder
                 'alamat' => 'Jalan Gelanggan Remaja Expo',
                 // 'email' => 'maria.jikwa@gmail.com',
                 'nomor_hp' => '081209876543',
-                'gambar' => fake()->randomElement(
+                'foto' => fake()->randomElement(
                     [
                         'avatars/girl.png',
                         'avatars/girl-2.png'
@@ -75,7 +75,7 @@ class PemudaSeeder extends Seeder
                 'alamat' => 'Uncen Bawah Asrama Kanguru',
                 // 'email' => 'maria.jikwa@gmail.com',
                 'nomor_hp' => '081209876543',
-                'gambar' => fake()->randomElement(
+                'foto' => fake()->randomElement(
                     [
                         'avatars/girl.png',
                         'avatars/girl-2.png'
@@ -100,7 +100,7 @@ class PemudaSeeder extends Seeder
                 'alamat' => 'Jalan Perumnas IV Padang Bulan ',
                 // 'email' => 'maria.jikwa@gmail.com',
                 'nomor_hp' => '081209876543',
-                'gambar' => fake()->randomElement(
+                'foto' => fake()->randomElement(
                     [
                         'avatars/girl.png',
                         'avatars/girl-2.png'
@@ -124,7 +124,7 @@ class PemudaSeeder extends Seeder
                 'alamat' => 'Jalan Yahim Sentani',
                 // 'email' => 'maria.jikwa@gmail.com',
                 'nomor_hp' => '081209876543',
-                'gambar' => fake()->randomElement(
+                'foto' => fake()->randomElement(
                     [
                         'avatars/girl.png',
                         'avatars/girl-2.png'
@@ -148,7 +148,7 @@ class PemudaSeeder extends Seeder
                 'alamat' => 'Jalan Perumnas IV Padang Bulan Blok Q ',
                 // 'email' => 'maria.jikwa@gmail.com',
                 'nomor_hp' => '081209876543',
-                'gambar' => fake()->randomElement(
+                'foto' => fake()->randomElement(
                     [
                         'avatars/girl.png',
                         'avatars/girl-2.png'
@@ -172,7 +172,7 @@ class PemudaSeeder extends Seeder
                 'alamat' => 'Jalan Perumahan Polda Buper Waena',
                 // 'email' => 'maria.jikwa@gmail.com',
                 'nomor_hp' => '081209876543',
-                'gambar' => fake()->randomElement(
+                'foto' => fake()->randomElement(
                     [
                         'avatars/girl.png',
                         'avatars/girl-2.png'
@@ -196,7 +196,7 @@ class PemudaSeeder extends Seeder
                 'alamat' => 'Jalan Dawer Entrop Walikota',
                 // 'email' => 'maria.jikwa@gmail.com',
                 'nomor_hp' => '081209876543',
-                'gambar' => fake()->randomElement(
+                'foto' => fake()->randomElement(
                     [
                         'avatars/girl.png',
                         'avatars/girl-2.png'
@@ -221,7 +221,7 @@ class PemudaSeeder extends Seeder
                 'alamat' => 'Jalan Perumnas 3 Kamolker',
                 // 'email' => 'maria.jikwa@gmail.com',
                 'nomor_hp' => '081209876543',
-                'gambar' => fake()->randomElement(
+                'foto' => fake()->randomElement(
                     [
                         'avatars/girl.png',
                         'avatars/girl-2.png'
@@ -245,7 +245,7 @@ class PemudaSeeder extends Seeder
                 'alamat' => 'Jalan Jeruk Nipis Kota Raya Luar',
                 // 'email' => 'maria.jikwa@gmail.com',
                 'nomor_hp' => '081209876543',
-                'gambar' => fake()->randomElement(
+                'foto' => fake()->randomElement(
                     [
                         'avatars/girl.png',
                         'avatars/girl-2.png'
@@ -269,7 +269,7 @@ class PemudaSeeder extends Seeder
                 'alamat' => 'Jalan Pasir II Pantae Baseg',
                 // 'email' => 'maria.jikwa@gmail.com',
                 'nomor_hp' => '081209876543',
-                'gambar' => fake()->randomElement(
+                'foto' => fake()->randomElement(
                     [
                         'avatars/girl.png',
                         'avatars/girl-2.png'
@@ -293,7 +293,7 @@ class PemudaSeeder extends Seeder
                 'alamat' => 'Jalan Perumnas IV Padang Bulan Blok D ',
                 // 'email' => 'maria.jikwa@gmail.com',
                 'nomor_hp' => '081209876543',
-                'gambar' => fake()->randomElement(
+                'foto' => fake()->randomElement(
                     [
                         'avatars/girl.png',
                         'avatars/girl-2.png'
@@ -317,7 +317,7 @@ class PemudaSeeder extends Seeder
                 'alamat' => 'Jalan Naik Perumahan Polda Bupert Expo',
                 // 'email' => 'maria.jikwa@gmail.com',
                 'nomor_hp' => '081209876543',
-                'gambar' => fake()->randomElement(
+                'foto' => fake()->randomElement(
                     [
                         'avatars/girl.png',
                         'avatars/girl-2.png'
@@ -341,7 +341,7 @@ class PemudaSeeder extends Seeder
                 'alamat' => 'Jalan Sentani Pos 7 ',
                 // 'email' => 'maria.jikwa@gmail.com',
                 'nomor_hp' => '081209876543',
-                'gambar' => fake()->randomElement(
+                'foto' => fake()->randomElement(
                     [
                         'avatars/girl.png',
                         'avatars/girl-2.png'
@@ -366,7 +366,7 @@ class PemudaSeeder extends Seeder
                 'alamat' => 'Jalan Perumnas II Asrama Putra Lanny Jaya',
                 // 'email' => 'maria.jikwa@gmail.com',
                 'nomor_hp' => '081209876543',
-                'gambar' => fake()->randomElement(
+                'foto' => fake()->randomElement(
                     [
                         'avatars/girl.png',
                         'avatars/girl-2.png'
@@ -391,7 +391,7 @@ class PemudaSeeder extends Seeder
                 'alamat' => 'Jalan Perumahan Polda Atas Buper',
                 // 'email' => 'maria.jikwa@gmail.com',
                 'nomor_hp' => '081209876543',
-                'gambar' => fake()->randomElement(
+                'foto' => fake()->randomElement(
                     [
                         'avatars/girl.png',
                         'avatars/girl-2.png'
@@ -416,7 +416,7 @@ class PemudaSeeder extends Seeder
                 'alamat' => 'Jalan Perumnas IV Padang Bulan II Itawakhu',
                 // 'email' => 'maria.jikwa@gmail.com',
                 'nomor_hp' => '081209876543',
-                'gambar' => fake()->randomElement(
+                'foto' => fake()->randomElement(
                     [
                         'avatars/girl.png',
                         'avatars/girl-2.png'
@@ -441,7 +441,7 @@ class PemudaSeeder extends Seeder
                 'alamat' => 'Jalan Walikota Entrop',
                 // 'email' => 'maria.jikwa@gmail.com',
                 'nomor_hp' => '081209876543',
-                'gambar' => fake()->randomElement(
+                'foto' => fake()->randomElement(
                     [
                         'avatars/girl.png',
                         'avatars/girl-2.png'
@@ -465,7 +465,7 @@ class PemudaSeeder extends Seeder
                 'alamat' => 'Jalan Perumnas IV Padang Bulan ',
                 // 'email' => 'maria.jikwa@gmail.com',
                 'nomor_hp' => '081209876543',
-                'gambar' => fake()->randomElement(
+                'foto' => fake()->randomElement(
                     [
                         'avatars/girl.png',
                         'avatars/girl-2.png'
@@ -489,7 +489,7 @@ class PemudaSeeder extends Seeder
                 'alamat' => 'Asrama Putra Lanny Jaya',
                 // 'email' => 'maria.jikwa@gmail.com',
                 'nomor_hp' => '081209876543',
-                'gambar' => fake()->randomElement(
+                'foto' => fake()->randomElement(
                     [
                         'avatars/girl.png',
                         'avatars/girl-2.png'
@@ -513,7 +513,7 @@ class PemudaSeeder extends Seeder
                 'alamat' => 'Jalan Perumnas IV Padang Bulan Blok Q Gunung ',
                 // 'email' => 'maria.jikwa@gmail.com',
                 'nomor_hp' => '081209876543',
-                'gambar' => fake()->randomElement(
+                'foto' => fake()->randomElement(
                     [
                         'avatars/girl.png',
                         'avatars/girl-2.png'
@@ -537,7 +537,7 @@ class PemudaSeeder extends Seeder
                 'alamat' => 'Jalan Sentani ',
                 // 'email' => 'maria.jikwa@gmail.com',
                 'nomor_hp' => '081209876543',
-                'gambar' => fake()->randomElement(
+                'foto' => fake()->randomElement(
                     [
                         'avatars/girl.png',
                         'avatars/girl-2.png'
@@ -556,7 +556,7 @@ class PemudaSeeder extends Seeder
                 'alamat' => 'Jalan Kota Raya Dalam',
                 // 'email' => 'maria.jikwa@gmail.com',
                 'nomor_hp' => '081209876533',
-                'gambar' => fake()->randomElement(
+                'foto' => fake()->randomElement(
                     [
                         'avatars/girl.png',
                         'avatars/girl-2.png'

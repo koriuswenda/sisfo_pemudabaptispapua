@@ -14,9 +14,11 @@ use Livewire\Attributes\On;
 use Livewire\Attributes\Url;
 use Livewire\Component;
 use Exception;
+use Livewire\WithFileUploads;
 
 class Form extends Component
 {
+    use WithFileUploads;
     public $pemuda = [];
     public $jenisKelamin;
     public bool $isDisabled = false;
@@ -40,7 +42,7 @@ class Form extends Component
     ];
 
     protected $messages = [
-        'pemuda.pemuda.required' => 'Nama pemuda tidak boleh kosong',
+        'pemuda.nama_depan.required' => 'Nama nama depan tidak boleh kosong',
     ];
 
     public function mount(): void
@@ -77,6 +79,12 @@ class Form extends Component
         try {
             DB::beginTransaction();
 
+            if (isset($this->pemuda['foto']) && $this->pemuda['foto'] != '' && !is_string($this->pemuda['foto'])) {
+                $this->pemuda['foto'] =  $this->uploadFile('foto_',$this->pemuda['foto']);
+            }
+
+            // dd($this->pemuda['foto']);
+
             Pemuda::updateOrCreate(
                 [
                     'id' => $this->pemuda['id'] ?? null
@@ -109,6 +117,41 @@ class Form extends Component
         }
 
         if ($this->menu === 'view') $this->isDisabled = true;
+    }
+
+    private function fileChecking(): void
+    {
+        if(isset($this->pemuda['foto']) && is_string($this->pemuda['foto'])){
+            $this->rules['pemuda.foto'] = 'nullable';
+        }
+    }
+
+
+    private function microtime_float(): float
+    {
+        list($usec, $sec) = explode(" ", microtime());
+        return ((float)$usec + (float)$sec);
+    }
+
+    private function uploadFile($fileName, $file): string
+    {
+        $fileName = $fileName. '_'.$this->microtime_float().'.'.$file->extension();
+        $file->storeAs('public/foto', $fileName);
+        return 'foto/'.$fileName;
+    }
+
+    #[On('delete-file')]
+    public function deleteFile($foto):void
+    {
+        $pathFile = storage_path('app/public/foto/' . $this->pemuda[$foto] ?? '');
+        if (file_exists($pathFile)) unlink($pathFile);
+        $this->pemuda[$foto] = '';
+        Pemuda::updateOrCreate(
+            [
+                'id' => $this->pemuda['id'] ?? null
+            ],
+            $this->pemuda
+        );
     }
 
     public function render(): View
