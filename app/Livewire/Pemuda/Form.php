@@ -4,6 +4,7 @@ namespace App\Livewire\Pemuda;
 
 use App\Models\Pemuda;
 use App\Models\JenisKelamin;
+use App\Models\Gereja;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
@@ -21,6 +22,7 @@ class Form extends Component
     use WithFileUploads;
     public $pemuda = [];
     public $jenisKelamin;
+    public $gereja;
     public bool $isDisabled = false;
 
     #[Url(history: true)]
@@ -51,6 +53,7 @@ class Form extends Component
         $this->loadpemuda($this->id, $this->menu);
         
         $this->jenisKelamin = JenisKelamin::query()->get();
+        $this->gereja = Gereja::query()->get();
 
 
         if (!$this->user->hasAnyPermission(['edit'])) {

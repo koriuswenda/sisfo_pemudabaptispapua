@@ -61,6 +61,7 @@
                     <thead>
                     <tr>
                         <th>Nama Lengkap</th>
+                        <th>Gereja</th>
                         <th>Jenis Kelamin</th>
                         <th>Tempat, Tanggal Lahir</th>
                         <th>Nomor HP</th>
@@ -97,6 +98,7 @@
                                         </span>
                                     </div>
                                 </td>
+                                <td>{{$record->gereja?->nama_gereja}}</td>
                                 <td>{{$record->jenisKelamin?->jenis_kelamin}}</td>
                                 <td>{{$record->tempat_tanggal_lahir ?? ''}}</td>
                                 <td>{{$record->nomor_hp ?? ''}}</td>

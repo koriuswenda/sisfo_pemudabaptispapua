@@ -23,9 +23,15 @@
                                     </div>
 
                                     <div class="form-item flex gap-2">
+
                                         <div class="w-1/3">
                                             <x-admin.select label="Jenis Kelamin" id="jenis-kelamin" optionName="jenis_kelamin" :options="$jenisKelamin" name="pemuda.jenis_kelamin_id"  :isDisabled="$isDisabled" />
                                         </div> <!-- input item end -->
+
+                                        <div class="w-1/3">
+                                            <x-admin.select label="Gereja" id="gereja" optionName="nama_gereja" :options="$gereja" name="pemuda.gereja_id"  :isDisabled="$isDisabled" />
+                                        </div> <!-- input item end -->
+                                        
                                     </div>
 
                                     <div class="form-item flex gap-2">
