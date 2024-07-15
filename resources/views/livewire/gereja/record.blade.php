@@ -61,7 +61,9 @@
                     <thead>
                     <tr>
                         <th>Nama Gereja</th>
+                        <th>Nama Pengguna (Username)</th>
                         <th>Wilayah</th>
+                        <th>Jumlah Pemuda</th>
                         <th>Keterangan</th>
                         <th>Dibuat pada</th>
                         <th>Diubah pada</th>
@@ -85,7 +87,9 @@
                             @endphp
                             <tr>
                                 <td>{{$record->nama_gereja ?? ''}}</td>
+                                <td>{{$record->nama_pengguna ?? ''}}</td>
                                 <td>{{$record->wilayah?->nama_wilayah}}</td>
+                                <td>{{ ('0') }}</td>
                                 <td>{{$record->keterangan ?? ''}}</td>
                                 <td>{{$record->created_at ?? ''}}</td>
                                 <td>{{$record->updated_at ?? ''}}</td>

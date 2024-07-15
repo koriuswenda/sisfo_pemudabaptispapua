@@ -18,6 +18,9 @@ return new class extends Migration
             $table->string('wilayah_id')->nullable();
             $table->string('alamat')->nullable();
             $table->mediumText('keterangan')->nullable();
+            
+            $table->string('nama_pengguna')->nullable();
+            $table->string('kata_sandi')->nullable();
 
             $table->timestamp('published_at')->nullable();
             $table->timestamps();

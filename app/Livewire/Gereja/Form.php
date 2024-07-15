@@ -31,11 +31,15 @@ class Form extends Component
     protected $rules = [
         'gereja.nama_gereja' => 'required',
         'gereja.wilayah_id' => 'required',
+        'gereja.nama_pengguna' => 'required|alpha_dash:ascii',
+        'gereja.kata_sandi' => 'required',
     ];
 
     protected $messages = [
         'gereja.nama_gereja.required' => 'Nama gereja tidak boleh kosong',
         'gereja.wilayah_id.required' => 'Wilayah wajib dilengkapi',
+        'gereja.nama_pengguna.alpha_dash' => 'Nama Pengguna tidak sesuai format',
+        'gereja.kata_sandi.required' => 'Kata Sandi wajib dilengkapi',
     ];
 
     public function mount(): void
@@ -71,6 +75,9 @@ class Form extends Component
 
         try {
             DB::beginTransaction();
+
+            
+            $this->gereja['kata_sandi'] = Hash::make($this->gereja['kata_sandi']);
 
             Gereja::updateOrCreate(
                 [

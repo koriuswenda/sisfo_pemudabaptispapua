@@ -62,6 +62,8 @@
                     <tr>
                         <th>Nama Wilayah</th>
                         <th>Kode Wilayah</th>
+                        <th>Jumlah Gereja</th>
+                        <th>Jumlah Pemuda</th>
                         <th>Keterangan</th>
                         <th>Dibuat pada</th>
                         <th>Diubah pada</th>
@@ -86,6 +88,8 @@
                             <tr>
                                 <td>{{$record->nama_wilayah ?? ''}}</td>
                                 <td>{{$record->kode_wilayah ?? ''}}</td>
+                                <td>{{ '0'}}</td>
+                                <td>{{ '0'}}</td>
                                 <td>{{$record->keterangan ?? ''}}</td>
                                 <td>{{$record->created_at ?? ''}}</td>
                                 <td>{{$record->updated_at ?? ''}}</td>

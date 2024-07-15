@@ -9,10 +9,8 @@
                                 <div class="card-body">
                                     <div class="form-item flex gap-2">
                                         <div class="w-1/2">
-                                            <x-admin.input label="Nama Gereja" id="nama_gereja" name="gereja.nama_gereja"
-                                                :isDisabled="$isDisabled" />
+                                            <x-admin.input label="Nama Gereja" id="nama_gereja" name="gereja.nama_gereja" :isDisabled="$isDisabled" />
                                         </div> <!-- input item end -->
-
                                     </div>
 
                                     <div class="form-item flex gap-2">
@@ -22,11 +20,23 @@
                                     </div>
 
                                     <div class="form-item flex gap-2">
+
+                                        <div class="w-1/4">
+                                            <x-admin.input label="Nama Pengguna" id="nama_pengguna" name="gereja.nama_pengguna" :isDisabled="$isDisabled" />
+                                        </div> <!-- input item end -->
+                                        
+                                        <div class="w-1/4">
+                                            <x-admin.inputPassword label="Kata Sandi" id="kata_sandi" name="gereja.kata_sandi" :isDisabled="$isDisabled" />
+                                        </div> <!-- input item end -->
+                                    </div>
+
+                                    <div class="form-item flex gap-2">
+
                                         <div class="w-1/2">
-                                            <x-admin.textarea label="Keterangan" id="keterangan" name="gereja.keterangan"
-                                                :isDisabled="$isDisabled" /> <!-- input item end -->
+                                            <x-admin.textarea label="Keterangan" id="keterangan" name="gereja.keterangan" :isDisabled="$isDisabled" /> <!-- input item end -->
                                         </div>
                                     </div>
+
                                 </div>
                             </div>
                         </div>
