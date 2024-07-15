@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Livewire\Gereja;
+namespace App\Livewire\Galeri;
 
 use Livewire\Component;
-use App\Models\Gereja;
+use App\Models\Galeri;
 use Illuminate\Support\Carbon;
 use Illuminate\View\View;
 use Livewire\Attributes\Url;
@@ -40,7 +40,7 @@ class Record extends Component
 
     public function publishOrDraft($id): void
     {
-        $record = Gereja::query()->withTrashed()->find($id);
+        $record = Galeri::query()->withTrashed()->find($id);
         $type = 'publik';
         if($record->published_at == null){
             $record->published_at = Carbon::now();
@@ -55,7 +55,7 @@ class Record extends Component
 
     public function undo($id): void
     {
-        $record = Gereja::query()->withTrashed()->whereNotNull('deleted_at')->find($id);
+        $record = Galeri::query()->withTrashed()->whereNotNull('deleted_at')->find($id);
         $record->deleted_at = null;
         $record->save();
         session()->flash('success', 'Data berhasil dikembalikan!');
@@ -63,14 +63,14 @@ class Record extends Component
 
     public function delete($id): void
     {
-        $record = Gereja::query()->withTrashed()->whereNotNull('deleted_at')->find($id);
+        $record = Galeri::query()->withTrashed()->whereNotNull('deleted_at')->find($id);
         if(isset($record->deleted_at)){
             $record->user?->forceDelete();
             $record->forceDelete();
             session()->flash('success', 'Data berhasil dihapus permanen');
             return;
         }
-        $record = Gereja::query()->find($id);
+        $record = Galeri::query()->find($id);
         $record->published_at = null;
         $record->save();
         $record->delete();
@@ -89,18 +89,16 @@ class Record extends Component
 
     public function render(): View
     {
-        $this->totalAll = Gereja::query()->count();
-        $this->totalPublik = Gereja::query()->published()->count();
-        $this->totalKonsep = Gereja::query()->draft()->count();
-        $this->totalTempatSampah = Gereja::query()->withTrashed()->whereNotNull('deleted_at')->count();
-        $query = Gereja::query()
+        $this->totalAll = Galeri::query()->count();
+        $this->totalPublik = Galeri::query()->published()->count();
+        $this->totalKonsep = Galeri::query()->draft()->count();
+        $this->totalTempatSampah = Galeri::query()->withTrashed()->whereNotNull('deleted_at')->count();
+        $query = Galeri::query()
             ->when(strlen($this->search) > 2, function ($query) {
                 $query
                     ->where(function ($query) {
                         $query
-                            ->where('nama_depan', 'like', '%' . $this->search . '%')
-                            ->orWhere('nama_tengah', 'like', '%' . $this->search . '%')
-                            ->orWhere('nama_belakang', 'like', '%' . $this->search . '%');
+                            ->where('judul', 'like', '%' . $this->search . '%');
                     });
             });
         
@@ -114,7 +112,7 @@ class Record extends Component
             $records = $query->withTrashed()->whereNotNull('deleted_at')->paginate($this->paginate)->withQueryString();
         }
         
-        return view('livewire.gereja.record', ['records' => $records]);
+        return view('livewire.galeri.record', ['records' => $records]);
         
     }
 }

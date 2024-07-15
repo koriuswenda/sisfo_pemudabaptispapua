@@ -79,13 +79,13 @@
                         </a>
                     </li>
                     <li data-menu-item="classic-welcome" class="menu-item menu-item-single mb-2 {{$segment == 'galeri' ? $active : ''}}">
-                        <a class="menu-item-link hover:text-black/70 {{$segment == 'galeri' ? 'text-white' : ''}}" href="{{ route('dasbor') }}">
+                        <a class="menu-item-link hover:text-black/70 {{$segment == 'galeri' ? 'text-white' : ''}}" href="{{ route('galeri') }}">
                             <i class="fa-solid fa-image text-lg"></i>
                             <span class="menu-item-text">Galeri</span>
                         </a>
                     </li>
                     <li data-menu-item="classic-welcome" class="menu-item menu-item-single mb-2 {{$segment == 'jadwal' ? $active : ''}}">
-                        <a class="menu-item-link hover:text-black/70 {{$segment == 'jadwal' ? 'text-white' : ''}}" href="{{ route('dasbor') }}">
+                        <a class="menu-item-link hover:text-black/70 {{$segment == 'jadwal' ? 'text-white' : ''}}" href="{{ route('jadwal') }}">
                             <i class="fa-solid fa-calendar-check text-lg"></i>
                             <span class="menu-item-text">Jadwal Ibadah</span>
                         </a>

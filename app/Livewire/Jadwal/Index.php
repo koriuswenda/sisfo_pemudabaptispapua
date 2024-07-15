@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Livewire\Gereja;
+namespace App\Livewire\Jadwal;
 
-use App\Models\Gereja;
+use App\Models\Jadwal;
 use Illuminate\Support\Facades\Log;
 use Illuminate\View\View;
 use Livewire\Attributes\On;
@@ -15,8 +15,8 @@ class Index extends Component
     public ?string $menu = '';
     public ?string $buttonTitle = 'Tambah';
     public ?string $buttonIcon = "fa-solid fa-plus";
-    public string $subtitle = "Data Gereja kerja di untuks setiap petugas lapangan";
-    public string $title = "Gereja";
+    public string $subtitle = "Data Jadwal kerja di untuks setiap petugas lapangan";
+    public string $title = "Jadwal";
     public bool $isDisabled = false;
 
     #[Url(history: true)]
@@ -27,7 +27,7 @@ class Index extends Component
         if ($this->menu === 'create') {
             $this->buttonTitle = 'Kembali';
             $this->buttonIcon = 'fa-solid fa-arrow-left';
-            $this->subtitle = "Tambah data Gereja kerja untuk setiap petugas lapangan";
+            $this->subtitle = "Tambah data Jadwal kerja untuk setiap petugas lapangan";
         }
 
         $this->buttonMenu();
@@ -37,7 +37,7 @@ class Index extends Component
     public function action(): void
     {
         if ($this->menu === 'create') {
-            $this->redirect(route('gereja'));
+            $this->redirect(route('jadwal'));
         }
         if ($this->menu === '') {
             $this->menu = 'create';
@@ -59,7 +59,7 @@ class Index extends Component
     public function edit($id):void
     {
         if($this->menu === 'view'){
-            $this->dispatch('load-gereja', id:$id, menu: 'edit');
+            $this->dispatch('load-jadwal', id:$id, menu: 'edit');
         }
         $this->menu='edit';
         $this->id = $id;
@@ -91,20 +91,20 @@ class Index extends Component
     public function delete($id): void
     {
         try {
-            $record = Gereja::query()->withTrashed()->whereNotNull('deleted_at')->find($id);
+            $record = Jadwal::query()->withTrashed()->whereNotNull('deleted_at')->find($id);
 
             // jika hapus permanen
             if(isset($record->deleted_at)){
                 $record->user?->forceDelete();
                 $record->forceDelete();
                 session()->flash('success', 'Data berhasil dihapus permanen');
-                $this->redirectRoute('gereja');
+                $this->redirectRoute('jadwal');
             }
 
-            $record = Gereja::query()->find($id);
+            $record = Jadwal::query()->find($id);
             $record->delete();
             session()->flash('success', 'Data berhasil dihapus sementara/dipindahkan ke tempat sampah');
-            $this->redirectRoute($this->title === 'gereja', ['menu' => 'tempat_sampah']);
+            $this->redirectRoute($this->title === 'jadwal', ['menu' => 'tempat_sampah']);
         }catch (\Exception $e){
             Log::info('Error : '. $e->getMessage());
             session()->flash('error', 'Error: '.$e->getMessage());
@@ -113,7 +113,7 @@ class Index extends Component
 
     public function render(): View
     {
-        return view('livewire.gereja.index');
+        return view('livewire.jadwal.index');
     }
 
 

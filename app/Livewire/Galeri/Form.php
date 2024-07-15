@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Livewire\Gereja;
+namespace App\Livewire\Galeri;
 
-use App\Models\Gereja;
+use App\Models\Galeri;
 use App\Models\Wilayah;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
@@ -17,7 +17,7 @@ use Exception;
 
 class Form extends Component
 {
-    public $gereja = [];
+    public $galeri = [];
     public $wilayah;
     public bool $isDisabled = false;
 
@@ -29,19 +29,17 @@ class Form extends Component
     public $user;
 
     protected $rules = [
-        'gereja.nama_gereja' => 'required',
-        'gereja.wilayah_id' => 'required',
+        'galeri.judul' => 'required',
     ];
 
     protected $messages = [
-        'gereja.nama_gereja.required' => 'Nama gereja tidak boleh kosong',
-        'gereja.wilayah_id.required' => 'Wilayah wajib dilengkapi',
+        'galeri.judul.required' => 'Nama galeri tidak boleh kosong',
     ];
 
     public function mount(): void
     {
         $this->user = Auth::user();
-        $this->loadgereja($this->id, $this->menu);
+        $this->loadGaleri($this->id, $this->menu);
         
         $this->wilayah = Wilayah::query()->get();
 
@@ -50,7 +48,7 @@ class Form extends Component
             $this->isDisabled = true;
         }
         // if ($this->id != ''){
-        //     $this->gereja = Gereja::query()->find($this->id)?->toArray();
+        //     $this->galeri = Galeri::query()->find($this->id)?->toArray();
         // }
     }
 
@@ -64,7 +62,7 @@ class Form extends Component
     {
         if (!$this->user->hasAnyPermission(['edit'])) {
             session()->flash('error', 'Maaf anda tidak memiliki hak akses!');
-            $this->redirectRoute('gereja');
+            $this->redirectRoute('galeri');
             return;
         }
         $this->validate();
@@ -72,11 +70,11 @@ class Form extends Component
         try {
             DB::beginTransaction();
 
-            Gereja::updateOrCreate(
+            Galeri::updateOrCreate(
                 [
-                    'id' => $this->gereja['id'] ?? null
+                    'id' => $this->galeri['id'] ?? null
                 ],
-                $this->gereja
+                $this->galeri
             );
 
             DB::commit();
@@ -87,20 +85,20 @@ class Form extends Component
         }
 
         $message = 'tambahkan data baru!';
-        if (isset($this->gereja['id'])) {
+        if (isset($this->galeri['id'])) {
             $message = 'ubah data!';
         }
 
         session()->flash('success', $message);
-        $this->redirectRoute('gereja');
+        $this->redirectRoute('galeri');
     }
 
-    #[On('load-gereja')]
-    public function loadGereja($id, $menu = 'view'): void
+    #[On('load-galeri')]
+    public function loadGaleri($id, $menu = 'view'): void
     {
         $this->menu = $menu;
         if ($this->id != '') {
-            $this->gereja = Gereja::query()->withTrashed()->find($id)?->toArray();
+            $this->galeri = Galeri::query()->withTrashed()->find($id)?->toArray();
         }
 
         if ($this->menu === 'view') $this->isDisabled = true;
@@ -108,6 +106,6 @@ class Form extends Component
 
     public function render(): View
     {
-        return view('livewire.gereja.form');
+        return view('livewire.galeri.form');
     }
 }

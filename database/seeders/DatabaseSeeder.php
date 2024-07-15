@@ -22,7 +22,10 @@ class DatabaseSeeder extends Seeder
             GerejaSeeder::class,
             PengumumanSeeder::class,
             AgendaSeeder::class,
+            GaleriSeeder::class,
+            JadwalSeeder::class,
             KotaKabSeeder::class,
+            JenisKelaminSeeder::class,
 
             //  Role
             RoleSeeder::class,
