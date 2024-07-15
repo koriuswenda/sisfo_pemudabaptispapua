@@ -37,7 +37,7 @@
                 <div class="dropdown-toggle" id="user-dropdown" data-bs-toggle="dropdown">
                     <div class="header-action-item flex items-center gap-2">
                         <span class="avatar avatar-circle" data-avatar-size="32" style="width: 32px">
-                        <img class="avatar-img avatar-circle" src="{{ isset(Auth::user()->pegawai->gambar) && !empty(Auth::user()->pegawai->gambar) ? asset('storage/'.Auth::user()->pegawai->gambar) : asset('assets/img/avatars/man.png') }}" loading="lazy" alt=""></span>
+                        <img class="avatar-img avatar-circle" src="{{ isset(Auth::user()->pegawai->gambar) && !empty(Auth::user()->pegawai->gambar) ? asset('storage/'.Auth::user()->pegawai->gambar) : asset('assets/img/avatars/korius.png') }}" loading="lazy" alt=""></span>
                         <div class="hidden md:block">
                             <div class="text-lg">{{ '@'.Auth::user()->username }} </div>
                             <div class="font-semibNold text-xs capitalize"> {{ Auth::user()->roles->pluck('name')[0] ?? '' }} </div>
@@ -48,7 +48,7 @@
                     <li class="menu-item-header">
                         <div class="py-2 px-3 flex items-center gap-2">
                             <span class="avatar avatar-circle avatar-md">
-                                <img class="avatar-img avatar-circle" src="{{ isset(Auth::user()->pegawai->gambar) && !empty(Auth::user()->pegawai->gambar) ? asset('storage/'.Auth::user()->pegawai->gambar) : asset('assets/img/avatars/man.png') }}" loading="lazy" alt="">
+                                <img class="avatar-img avatar-circle" src="{{ isset(Auth::user()->pegawai->gambar) && !empty(Auth::user()->pegawai->gambar) ? asset('storage/'.Auth::user()->pegawai->gambar) : asset('assets/img/avatars/korius.png') }}" loading="lazy" alt="">
                             </span>
                             <div>
                                 <div class="font-bold text-gray-900">{{ isset(Auth::user()->pegawai) ? Auth::user()->pegawai->nama_depan.' '.Auth::user()->pegawai->nama_tengah.' '.Auth::user()->pegawai->nama_belakang : Auth::user()->username }} </div>
@@ -56,7 +56,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="menu-item-divider"></li>
+                    {{-- <li class="menu-item-divider"></li>
                     <li class="menu-item menu-item-hoverable mb-1 h-[35px]">
                         <a class="flex gap-2 items-center" href="{{route('adminmaster.profil')}}">
                             <span class="text-xl opacity-50">
@@ -77,7 +77,7 @@
                             </span>
                             <span>Pengaturan Akun</span>
                         </a>
-                    </li>
+                    </li> --}}
                     <li id="menu-item-29-2VewETdxAb" class="menu-item-divider"></li>
 
                     <form method="POST" x-ref="submit" action="{{ route('logout') }}" x-data>

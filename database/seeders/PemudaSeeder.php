@@ -31,12 +31,7 @@ class PemudaSeeder extends Seeder
                 'alamat' => 'Jalan Perumnas IV Padang Bulan II Itawakhu',
                 // 'email' => 'kk.wenda@gmail.com',
                 'nomor_hp' => '081234567890',
-                'foto' => fake()->randomElement(
-                    [
-                        'avatars/man.png',
-                        'avatars/man1.png',
-                    ]
-                ),
+                // 'foto' => 'avatars/korius.png',
                 'gereja_id' => 1,
                 'published_at' => now(),
             ],

@@ -14,6 +14,16 @@ class Wilayah extends Model
 
     protected $guarded = ['id'];
 
+    public function gereja()
+    {
+        return $this->hasMany(Gereja::class);
+    }
+
+    public function pemuda()
+    {
+        return $this->hasManyThrough(Pemuda::class, Gereja::class);
+    }
+
     public function scopeDraft(Builder $query): void
     {
         $query->whereNull('published_at');

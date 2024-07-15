@@ -35,16 +35,16 @@
                             <span class="menu-item-text">Data Pemuda</span>
                         </a>
                     </li>
-                    <li data-menu-item="classic-welcome" class="menu-item menu-item-single mb-2 {{$segment == 'wilayah' ? $active : ''}}">
-                        <a class="menu-item-link hover:text-black/70 {{$segment == 'wilayah' ? 'text-white' : ''}}" href="{{ route('wilayah') }}">
-                            <i class="fa-solid fa-users text-lg"></i>
-                            <span class="menu-item-text">Data Wilayah</span>
-                        </a>
-                    </li>
                     <li data-menu-item="classic-welcome" class="menu-item menu-item-single mb-2 {{$segment == 'gereja' ? $active : ''}}">
                         <a class="menu-item-link hover:text-black/70 {{$segment == 'gereja' ? 'text-white' : ''}}" href="{{ route('gereja') }}">
                             <i class="fa-solid fa-users text-lg"></i>
                             <span class="menu-item-text">Data Gereja</span>
+                        </a>
+                    </li>
+                    <li data-menu-item="classic-welcome" class="menu-item menu-item-single mb-2 {{$segment == 'wilayah' ? $active : ''}}">
+                        <a class="menu-item-link hover:text-black/70 {{$segment == 'wilayah' ? 'text-white' : ''}}" href="{{ route('wilayah') }}">
+                            <i class="fa-solid fa-users text-lg"></i>
+                            <span class="menu-item-text">Data Wilayah</span>
                         </a>
                     </li>
                 </ul>

@@ -17,11 +17,15 @@ class Dasbor extends Component
     public $wilayah = [];
     public $gereja = [];
     public $pemuda = [];
+    public $pemudaLakiLaki = [];
+    public $pemudaPerempuan = [];
 
     // total
     public $totalWilayah = 0;
     public $totalGereja = 0;
     public $totalPemuda = 0;
+    public $totalPemudaLakiLaki = 0;
+    public $totalPemudaPerempuan = 0;
 
     public function mount(): void
     {
@@ -42,20 +46,18 @@ class Dasbor extends Component
                     // ->where('is_asn', '=', true)
                     ->where('published_at', '!=', null)
                     ->count();
-        
-        // JenisKelamin::with('pemuda')->each(function ($jenisKelamin){
-        //     $this->jenisKelamins[] = ['name' => $jenisKelamin->jenis_kelamin, 'data' => [$jenisKelamin->pemuda->count()] ];
-        // });
-        // $this->statusPegawai = [
-        //     ['name' => 'ASN', 'data' => [Pegawai::query()->where('is_asn', '=', true)->count()]],
-        //     ['name' => 'NON ASN', 'data' => [Pegawai::query()->where('is_asn', '=', false)->count()]],
-        // ];
-        
-        // $this->bidangs = json_encode($this->bidangs);
-        // $this->jenisKelamins = json_encode($this->jenisKelamins);
-        // $this->statusPegawai = json_encode($this->statusPegawai);
-        // $this->lokasi = json_encode($this->lokasi);
-        // $this->suku = json_encode($this->suku);
+
+        // totalPemudaLakiLaki
+        $this->totalPemudaLakiLaki = Pemuda::query()
+                    ->where('jenis_kelamin_id', '=', 1)
+                    ->where('published_at', '!=', null)
+                    ->count();
+
+        // totalPemudaPerempuan
+        $this->totalPemudaPerempuan = Pemuda::query()
+                    ->where('jenis_kelamin_id', '=', 2)
+                    ->where('published_at', '!=', null)
+                    ->count();
     }
 
     public function render(): View

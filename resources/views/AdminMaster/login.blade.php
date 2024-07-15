@@ -40,9 +40,7 @@
                                             {{ $siteDescription }}
                                         </p>
                                     </div>
-                                    <span class="text-white">Copyright © 2024
-                                        <span class="font-semibold">- Powered by <a href="https://nokensoft.com" class="hover:underline" target="_blank">Nokensoft</a></span>
-                                    </span>
+                                    <span class="text-white">Copyright © 2024 - <a href="https://github.com/koriuswenda" class="font-bold hover:underline" target="_blank"> Korius Wenda </a> </span>
                                 </div>
                                 <div class="col-span-2 flex flex-col justify-center items-center bg-white">
                                     <div class="xl:min-w-[450px] px-8">
@@ -97,13 +95,6 @@
                                                                 </div>
                                                             </span>
                                                         </div>
-                                                    </div>
-                                                    <div class="flex justify-between mb-6">
-                                                        <label class="checkbox-label mb-0">
-                                                            <input class="checkbox" name="remember" type="checkbox" value="true" checked>
-                                                            <span class="ltr:ml-2 rtl:mr-2">Remember Me</span>
-                                                        </label>
-                                                        <a class="text-primary-600 hover:underline" href="forgot-password-side.html">Lupa Kata Sandi?</a>
                                                     </div>
                                                     <button class="btn btn-solid w-full" type="submit">Masuk</button>
                                                     <div class="mt-4 text-center">

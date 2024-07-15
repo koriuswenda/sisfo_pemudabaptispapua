@@ -89,7 +89,7 @@
                                 <td>{{$record->nama_gereja ?? ''}}</td>
                                 <td>{{$record->nama_pengguna ?? ''}}</td>
                                 <td>{{$record->wilayah?->nama_wilayah}}</td>
-                                <td>{{ ('0') }}</td>
+                                <td>{{$record->pemuda->count() ?? ''}}</td>
                                 <td>{{$record->keterangan ?? ''}}</td>
                                 <td>{{$record->created_at ?? ''}}</td>
                                 <td>{{$record->updated_at ?? ''}}</td>

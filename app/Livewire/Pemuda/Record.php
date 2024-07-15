@@ -27,7 +27,7 @@ class Record extends Component
     public int $totalKonsep = 0;
     public int $totalTempatSampah = 0;
     public $id;
-    public $paginate = 5;
+    public $paginate = 10;
     public $listPaginate = [5,10,25,50,100];
     public bool $isAsn = true;
 
@@ -100,7 +100,8 @@ class Record extends Component
                         $query
                             ->where('nama_depan', 'like', '%' . $this->search . '%')
                             ->orWhere('nama_tengah', 'like', '%' . $this->search . '%')
-                            ->orWhere('nama_belakang', 'like', '%' . $this->search . '%');
+                            ->orWhere('nama_belakang', 'like', '%' . $this->search . '%')
+                            ->orWhereHas('jenisKelamin', fn ($query) => $query->where('jenis_kelamin', 'like', '%' . $this->search . '%'));
                     });
             });
         
