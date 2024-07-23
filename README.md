@@ -3,7 +3,9 @@
 ## Important CLI Commands
 
 ### Composer Install
+
 Install package laravel dari composer
+
 ```
 composer install
 ```
@@ -11,6 +13,7 @@ composer install
 ### Setup .env
 
 Config file .env
+
 ```
 cp .env.example .env
 ```
@@ -18,9 +21,11 @@ cp .env.example .env
 ### Git Comands
 
 Cara mendownload project melalui GitHub ke local repository.
+
 ```
-git clone https://github.com/nokensoft/sipp-dlhk-kotajayapura.git
+git clone https://github.com/koriuswenda/sisfo_pemudabaptispapua.git
 ```
+
 cara hapus branch di local
 
 ```
@@ -34,11 +39,13 @@ git push origin -d branch-name
 ```
 
 ### Artisan Commands
+
 ```
 php artisan migrate:fresh --seed
 ```
 
-Generate APP key 
+Generate APP key
+
 ```
 php artisan key:generate
 ```
@@ -47,5 +54,3 @@ php artisan key:generate
 
 Ketika file dari storage tidak bisa akses
 `cd storage/app/public/` kemudian `chmod 777 files`. "files" merupakan nama folder
-
-
