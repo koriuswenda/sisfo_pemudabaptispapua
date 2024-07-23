@@ -8,17 +8,45 @@
                             <div class="card adaptable-card !border-b pb-6 py-4 rounded-br-none rounded-bl-none">
                                 <div class="card-body">
                                     <div class="form-item flex gap-2">
-                                        <div class="w-1/2">
-                                            <x-admin.input label="Judul" id="judul" name="jadwal.judul"
+                                        <div class="w-1/3">
+
+                                            <x-admin.input label="Tempat Ibadah" id="Tempat Ibadah"
+                                                name="jadwal.Tempat Ibadah" :isDisabled="$isDisabled" />
+                                        </div> <!-- input item end -->
+                                    </div>
+                                    <div class="form-item flex gap-2">
+                                        <div class="w-1/3">
+
+                                            <x-admin.input label="Petugas Ibadah" id="Petugas Ibadah"
+                                                name="jadwal.Petugas Ibadah" :isDisabled="$isDisabled" />
+                                        </div> <!-- input item end -->
+                                    </div>
+                                    <div class="form-item flex gap-2">
+                                        <div class="w-1/3">
+
+                                            <x-admin.input label="Pelayan Firman" id="Pelayan Firman"
+                                                name="jadwal.Pelayan Firman" :isDisabled="$isDisabled" />
+                                        </div> <!-- input item end -->
+                                    </div>
+                                    <div class="form-item flex gap-2">
+                                        <div class="w-1/3">
+
+                                            <x-admin.input label="Doa Syafaat" id="Doa Syafaat"
+                                                name="jadwal.Doa Syafaat" :isDisabled="$isDisabled" />
+                                        </div> <!-- input item end -->
+                                    </div>
+                                    <div class="form-item flex gap-2">
+                                        <div class="w-1/3">
+
+                                            <x-admin.input label="Doa Syukur" id="Doa Syukur" name="jadwal.Doa Syukur"
                                                 :isDisabled="$isDisabled" />
                                         </div> <!-- input item end -->
-
                                     </div>
 
                                     <div class="form-item flex gap-2">
                                         <div class="w-1/2">
-                                            <x-admin.textarea label="Keterangan" id="keterangan" name="jadwal.keterangan"
-                                                :isDisabled="$isDisabled" /> <!-- input item end -->
+                                            <x-admin.textarea label="Keterangan" id="keterangan"
+                                                name="jadwal.keterangan" :isDisabled="$isDisabled" /> <!-- input item end -->
                                         </div>
                                     </div>
                                 </div>
