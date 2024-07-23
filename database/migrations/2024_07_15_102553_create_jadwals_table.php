@@ -14,7 +14,11 @@ return new class extends Migration
         Schema::create('jadwals', function (Blueprint $table) {
             $table->id();
 
-            $table->string('judul');
+            $table->string('tempat_ibadah');
+            $table->string('petugas_ibadah');
+            $table->string('pelayan_firman');
+            $table->string('doa_syafaat');
+            $table->string('doa_syukur');
             $table->mediumText('keterangan')->nullable();
 
             $table->timestamp('published_at')->nullable();
