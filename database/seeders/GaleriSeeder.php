@@ -15,25 +15,25 @@ class GaleriSeeder extends Seeder
     {
         collect([
             [
-                'id' => 1,
                 'foto' => fake()->randomElement(
                     [
                         'foto/girl.png',
                         'foto/girl-2.png'
                     ]
                 ),
+                'id' => 1,
                 'judul' => 'Galeri 1',
                 'keterangan' => '',
                 'published_at' => now(),
             ],
             [
-                'id' => 2,
                 'foto' => fake()->randomElement(
                     [
                         'foto/girl.png',
                         'foto/girl-2.png'
                     ]
                 ),
+                'id' => 2,
                 'judul' => 'Galeri 2',
                 'keterangan' => '',
                 'published_at' => now(),
