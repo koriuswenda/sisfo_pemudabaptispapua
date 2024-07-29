@@ -7,14 +7,13 @@
                         <div class="lg:col-span-2">
                             <div class="card adaptable-card !border-b pb-6 py-4 rounded-br-none rounded-bl-none">
                                 <div class="card-body">
+                                    <div class="w-full">
+                                        <x-admin.upload-file title="Foto Profil"
+                                            subtitle="Unggah foto pemuda ukuran persegi" id="foto" label="foto"
+                                            name="pemuda.foto" :img="isset($pemuda['foto']) && !empty($pemuda) ? $pemuda['foto'] : ''" :isDisabled="$isDisabled" />
+                                    </div> <!-- input item end -->
                                     <div class="form-item flex gap-2">
-                                        <div class="w-full">
-                                            <x-admin.upload-file title="Foto Profil"
-                                                subtitle="Unggah foto pemuda ukuran persegi" id="foto"
-                                                label="foto" name="pemuda.foto" :img="isset($pemuda['foto']) && !empty($pemuda)
-                                                    ? $pemuda['foto']
-                                                    : ''" :isDisabled="$isDisabled" />
-                                        </div> <!-- input item end -->
+
                                         <div class="w-1/2">
                                             <x-admin.input label="Judul" id="judul" name="galeri.judul"
                                                 :isDisabled="$isDisabled" />
