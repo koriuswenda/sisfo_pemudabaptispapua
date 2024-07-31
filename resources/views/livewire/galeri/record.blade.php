@@ -98,6 +98,20 @@
                                 }
                             @endphp
                             <tr>
+                                <td>
+                                    <div class="flex items-center">
+                                        <span class="avatar avatar-rounded avatar-md">
+                                            {{-- <img class="avatar-img avatar-rounded" src="{{ isset($record->foto) && !empty($record->foto) && Storage::exists('public/'.$record->foto) ? asset('storage/'.$record->foto) : asset('assets/img/avatars/man.png') }}" loading="lazy"> --}}
+                                            @if ($record->foto)
+                                                <img class="avatar-img avatar-rounded"
+                                                    src="{{ asset('storage/' . $record->foto) }}" loading="lazy">
+                                            @else
+                                                <img class="avatar-img avatar-rounded"
+                                                    src="{{ asset('assets/img/avatars/user.png') }}" loading="lazy">
+                                            @endif
+                                        </span>
+                                    </div>
+                                </td>
                                 <td>{{ $record->gambar ?? '' }}</td>
                                 <td>{{ $record->judul ?? '' }}</td>
                                 <td>{{ $record->keterangan ?? '' }}</td>
