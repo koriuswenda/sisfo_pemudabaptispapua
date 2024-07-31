@@ -29,7 +29,9 @@ class Form extends Component
     public $user;
 
     protected $rules = [
+        'galeri.foto' => 'required',
         'galeri.judul' => 'required',
+        'galeri.keterangan' => 'required',
     ];
 
     protected $messages = [
@@ -40,7 +42,7 @@ class Form extends Component
     {
         $this->user = Auth::user();
         $this->loadGaleri($this->id, $this->menu);
-        
+
         $this->wilayah = Wilayah::query()->get();
 
 

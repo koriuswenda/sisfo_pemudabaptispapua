@@ -22,6 +22,7 @@ class GaleriSeeder extends Seeder
                     ]
                 ),
                 'id' => 1,
+                'foto' => '',
                 'judul' => 'Galeri 1',
                 'keterangan' => '',
                 'published_at' => now(),
@@ -34,6 +35,7 @@ class GaleriSeeder extends Seeder
                     ]
                 ),
                 'id' => 2,
+                'foto' => '',
                 'judul' => 'Galeri 2',
                 'keterangan' => '',
                 'published_at' => now(),
