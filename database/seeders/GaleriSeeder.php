@@ -23,7 +23,7 @@ class GaleriSeeder extends Seeder
                 ),
                 'id' => 1,
                 'judul' => 'galeri 1',
-                'keterangan' => 'foto 1',
+                'keterangan' => '',
                 'published_at' => now(),
             ],
             [
@@ -35,7 +35,7 @@ class GaleriSeeder extends Seeder
                 ),
                 'id' => 2,
                 'judul' => 'galeri 2',
-                'keterangan' => 'foto 2',
+                'keterangan' => '',
                 'published_at' => now(),
             ]
         ])->each(function ($collection) {
